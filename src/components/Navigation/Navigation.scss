@@ -1,0 +1,26 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px ;
+
+    background-color: #1d809f;
+    color: white;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            margin-right: 8px;
+            border-bottom: 1px solid inherit;
+        }
+        li:hover{
+            color: #CCC;
+            border-bottom: 1px solid #ccc;
+            transform: translateY(-2px);
+        }
+    }
+    .logo{
+        font-size: 30px;
+        color: white;
+    }
+}
