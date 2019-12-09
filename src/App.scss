@@ -1,0 +1,27 @@
+@import './theme/color.scss';
+@import './theme/basic.scss';
+@import './theme/btn.scss';
+html{
+    scroll-behavior: smooth;
+
+}
+.app{
+    #backTopBtn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        color: $baseContrastColor;
+        z-index: 99;
+        font-size: 2em;
+        outline: none;
+        border-color: $transparent;
+        background-color: $secondBaseColor;
+        padding: 10px;
+        border-radius: 4px;
+        &:hover, &:active{
+            color: $secondBaseColor;
+            background-color: $lightGray;
+        }
+    }
+}

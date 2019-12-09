@@ -1,0 +1,55 @@
+.serviceCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 1.5em;
+  border: 1.5px solid rgba(0, 0, 0, 0);
+}
+
+.serviceCard:hover {
+  border: 1.5px solid #E5AC00;
+}
+
+.serviceCard span {
+  background-color: white;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  color: #1d809f;
+  font-size: 3em;
+  line-height: 120px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.serviceCard span:hover, .serviceCard span:active {
+  color: white;
+  background-color: #1d809f;
+  cursor: pointer;
+}
+
+.serviceCard h4 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.serviceCard p {
+  font-size: 1em;
+}
+/*# sourceMappingURL=ServiceCard.css.map */

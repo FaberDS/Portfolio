@@ -1,0 +1,9 @@
+[class^='btn']{
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+    border: 1px solid $baseColor;
+    border-radius: 5px;
+    &:hover, &:active{
+        border-color: $baseContrastColor;
+    }
+}

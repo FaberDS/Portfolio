@@ -1,11 +1,13 @@
+@import '../../theme/color.scss';
+@import '../../theme/basic.scss';
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px ;
 
-    background-color: #1d809f;
-    color: white;
+    background-color: $baseColor;
+    color: $baseContrastColor;
     ul{
         list-style: none;
         li{
@@ -14,13 +16,13 @@ nav{
             border-bottom: 1px solid inherit;
         }
         li:hover{
-            color: #CCC;
-            border-bottom: 1px solid #ccc;
+            color: $lightGray;
+            border-bottom: 1px solid $lightGray;
             transform: translateY(-2px);
         }
     }
     .logo{
         font-size: 30px;
-        color: white;
+        color: $baseContrastColor;
     }
 }

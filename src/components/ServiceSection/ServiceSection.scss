@@ -1,0 +1,26 @@
+@import '../../theme/color.scss';
+@import '../../theme/basic.scss';
+.services{
+    background-color: $baseColor;
+    padding: 120px 0;
+    text-align: center;
+    height: 100vh;
+    h3{
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $secondBaseColor;
+    }
+    h2{
+        color: $baseContrastColor;
+        font-size: 3em;
+        margin-bottom: 48px;
+        margin-top: 0;
+    }
+    .row{
+        display: flex;
+        justify-content: space-around;
+            
+    }  
+}

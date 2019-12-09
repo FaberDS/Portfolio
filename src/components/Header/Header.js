@@ -4,7 +4,6 @@ const background ="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?
 // const background="../../../images/heroImage.jpg";
 const heroStyle ={
     "backgroundImage": `url( ${background})`,
-    "height": "85vh",
     "backgroundSize": "cover"
 }
 class Header extends Component{
@@ -12,10 +11,10 @@ class Header extends Component{
         const {text} = this.props;
         const{headerTitle, subTitle, heroBtn, heroBtnLink} = text;
         return(
-            <header style={heroStyle}>
+            <header className="header" style={heroStyle}>
                 <h1>{headerTitle}</h1>
                 <p>{subTitle}</p>
-                <a href="#">{heroBtn}</a>
+                <a href="#" className="btn">{heroBtn}</a>
                 
             </header>
         )

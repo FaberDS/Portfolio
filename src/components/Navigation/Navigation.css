@@ -24,7 +24,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  color: #CCC;
+  color: #ccc;
   border-bottom: 1px solid #ccc;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);

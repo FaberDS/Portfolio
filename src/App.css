@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+[class^='btn'] {
+  cursor: pointer;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #1d809f;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+[class^='btn']:hover, [class^='btn']:active {
+  border-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app #backTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
   color: white;
+  z-index: 99;
+  font-size: 2em;
+  outline: none;
+  border-color: rgba(0, 0, 0, 0);
+  background-color: #E5AC00;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.app #backTopBtn:hover, .app #backTopBtn:active {
+  color: #E5AC00;
+  background-color: #ccc;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
