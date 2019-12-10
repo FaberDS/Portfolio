@@ -22,6 +22,8 @@ html{
         &:hover, &:active{
             color: $secondBaseColor;
             background-color: $lightGray;
+            transform: translateY(-3px);
+            
         }
     }
 }

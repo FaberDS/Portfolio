@@ -32,5 +32,7 @@ html {
 .app #backTopBtn:hover, .app #backTopBtn:active {
   color: #E5AC00;
   background-color: #ccc;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 /*# sourceMappingURL=App.css.map */

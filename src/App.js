@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
 import ServiceSection from './components/ServiceSection/ServiceSection';
 import Header from './components/Header/Header';
 import txt from './const/content';
@@ -16,6 +17,7 @@ class App extends Component{
           <Header text={txt}/>
         </header>
         <ServiceSection {...txt}/>
+        <Footer />
         <div id="backTopBtn" className="btn"><i className="fas fa-chevron-up"></i></div>
       </div>
     );
