@@ -1,5 +1,26 @@
-@import './theme/color.scss';
-@import './theme/basic.scss';
+@import '../../theme/color.scss';
+@import '../../theme/basic.scss';
 .footer{
-    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height:150px;
+    background-color: $darkContrast;
+    color: $baseContrastColor;
+    .copyRight{
+        span{
+            margin: 0 10px;
+        }
+        span:first-child{
+            margin-left: 62px;
+        }
+    }
+    .contactBar {
+        margin-top: 20px;
+        > div{
+            display: inline;
+            @include iconHover(white,black);
+        }
+    }
 }

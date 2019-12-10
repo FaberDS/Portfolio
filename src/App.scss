@@ -3,6 +3,7 @@
 @import './theme/btn.scss';
 html{
     scroll-behavior: smooth;
+    box-sizing: border-box;
 
 }
 .app{
@@ -11,19 +12,10 @@ html{
         position: fixed;
         bottom: 20px;
         right: 30px;
-        color: $baseContrastColor;
         z-index: 99;
         font-size: 2em;
         outline: none;
-        border-color: $transparent;
-        background-color: $secondBaseColor;
         padding: 10px;
-        border-radius: 4px;
-        &:hover, &:active{
-            color: $secondBaseColor;
-            background-color: $lightGray;
-            transform: translateY(-3px);
-            
-        }
+        @include iconHover(white,black);     
     }
 }

@@ -1,22 +1,12 @@
 @import '../../theme/color.scss';
 @import '../../theme/basic.scss';
 .services{
-    background-color: $baseColor;
-    padding: 120px 0;
-    text-align: center;
-    height: 100vh;
+    @include centeredFullPage($baseColor);
     h3{
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        text-transform: uppercase;
-        color: $secondBaseColor;
+        @include sectionSubTitle;
     }
     h2{
-        color: $baseContrastColor;
-        font-size: 3em;
-        margin-bottom: 48px;
-        margin-top: 0;
+        @include sectionTitle;
     }
     .row{
         display: flex;

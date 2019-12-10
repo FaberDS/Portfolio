@@ -1,0 +1,107 @@
+@import '../../theme/color.scss';
+@import '../../theme/basic.scss';
+$flipCardSize:160px;
+$flipCardImageSize: 90px;
+.knowledge{
+
+    @include centeredFullPage($baseColor);
+    position:relative;
+    > div:first-child{
+        @include sectionSubTitle;
+        color: 	black;
+    }
+    > div:nth-child(2){
+        @include sectionTitle;
+
+    }
+    .raw {
+        max-width: 900px;
+        margin: auto;
+        margin-top: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    /* perspective */
+    
+    .flip-container {
+        perspective: 1000;
+        margin: 10px;
+        float: left;
+    }
+    /* turning on hover */
+    
+    .flip-container:hover .flipper {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-container,
+    .front,
+    .back {
+
+        width: $flipCardSize;
+        height: $flipCardSize;
+        // line-height: $flipCardSize;
+        font-size: 10px;
+        border-radius: $bordRad;
+        position: relative;
+        img{
+            width: $flipCardImageSize;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+    /* flipping speed here */
+    
+    .flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    /* making the the other side hidden while flipping */
+    
+    .front,
+    .back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /* front side is in front of a back side */
+    
+    .front {
+        z-index: 2;
+        background-color: white;
+    }
+    /* back side */
+   
+    .back {
+
+        transform: rotateY(180deg);
+        border: 1px solid white;
+        border-radius: $bordRad;
+        background-color: $baseAnalogColor2;
+        color: white;
+        text-align: center;
+       
+    
+        .flipCardTitle {
+            padding-top: 3px;
+            font-size: 3em;
+            font-weight: bold;
+            margin-top: 0px;
+            
+        }
+        
+        .flipCardTitle +p{
+            font-size: 1.6em;
+        }
+    }
+    
+    
+}

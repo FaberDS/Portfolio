@@ -1,1 +1,45 @@
+@import './color.scss';
 $genPadding: 10px;
+$bordRad: 5px;
+@mixin centeredFullPage($bcolor) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $bcolor;
+    height: 100vh;
+    padding-top: 100px;
+    >div{max-width: 900px;}
+}
+@mixin sectionTitle(){
+    color: $baseContrastColor;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 48px;
+    margin-top: 0;
+}
+@mixin sectionSubTitle(){
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $secondBaseColor;
+}
+@mixin iconHover($mainColor, $secColor){
+    border-color: $mainColor;
+    color: $mainColor;
+    background-color: $secColor;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid $mainColor;
+    border-radius: $bordRad;
+    background-color: $secColor;
+    padding: 5px;
+    margin: 10px;
+    &:active, &:hover{
+        border-color: $secColor;
+        color: $secColor;
+        background-color: $mainColor;
+    }
+}
+

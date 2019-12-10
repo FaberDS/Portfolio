@@ -1,13 +1,21 @@
+
 const txt ={
-    navigationSections: ['Home','Services','Portfolio','Contact me'],
+    navigationSections: ['That\'s me','Possibilities','Knowledge','Contact me'],
     logoTitle: "Portfolio",
     headerTitle : "Denis",
     subTitle: "another portfolio",
     heroBtn:"See more",
     heroBtnLink:"Portfolio",
+    linkedInLink: "https://at.linkedin.com/in/denis-sch%C3%BCle-b54a95164",
+    contactMailAddress: "denis.schuele@edu.campus02.at",
+    contactMailSubject: "Website contact!",
+    KnowledgeSection:{
+        sectionTitle: 'I worked with',
+        sectionSubTitle: 'Technologies'
+    },
     ServiceSectionContent: {
-        serviceHeader : "services",
-        serviceSubHeader : "What I Offer",
+        serviceHeader : "Possibilities",
+        serviceSubHeader : "Fields I would like to work in",
         services:[
             {
                 serviceTitle: 'Responsive',
@@ -32,4 +40,5 @@ const txt ={
         ]
     }
 }
+
 export default txt;

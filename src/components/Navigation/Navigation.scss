@@ -11,11 +11,12 @@ nav{
     ul{
         list-style: none;
         li{
+            text-transform: uppercase;
             display: inline-block;
             margin-right: 8px;
             border-bottom: 1px solid inherit;
         }
-        li:hover{
+        li:hover, li:active{
             color: $lightGray;
             border-bottom: 1px solid $lightGray;
             transform: translateY(-2px);

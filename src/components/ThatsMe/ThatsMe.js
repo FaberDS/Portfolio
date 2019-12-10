@@ -10,9 +10,10 @@ class ThatsMe extends Component {
     }
 
     render() {
+        const {ID} = this.props;
         return (
-            <div>
-                
+            <div className="thatsMe" id={ID}>
+                That is me
             </div>
         )
     }

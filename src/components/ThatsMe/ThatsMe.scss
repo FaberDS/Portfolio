@@ -1,0 +1,8 @@
+@import '../../theme/color.scss';
+@import '../../theme/basic.scss';
+.thatsMe{
+   @include centeredFullPage($baseAnalogColor2);
+    
+
+
+}
