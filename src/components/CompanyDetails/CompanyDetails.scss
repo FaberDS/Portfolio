@@ -37,7 +37,7 @@ $transistionDurationTextDisapear: .01s;
     }
     &:hover .detailsText, &:active .detailsText{
         opacity:1;
-        left: $widthImg +100px;
+        left: $widthImg + 220px;
        
     }
     
@@ -57,9 +57,12 @@ $transistionDurationTextDisapear: .01s;
         }
     }
     .detailsText{
+
+        // background-color: violet;
         width: 300px;
         position: absolute;
         left: 100%;
+        top: 15%;
         opacity: 0;
         
         // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
@@ -68,13 +71,13 @@ $transistionDurationTextDisapear: .01s;
         // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         @include transSlow;
     }
-    // .detailsText.hide{
-    //     @include transFast;
-    //     // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-    //     // -moz-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-    //     // -o-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-    //     // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-    // }
+    .detailsText.hide{
+        @include transFast;
+        // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+        // -moz-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+        // -o-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+        // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+    }
 
 
 }
