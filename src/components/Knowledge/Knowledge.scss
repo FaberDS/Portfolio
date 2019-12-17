@@ -3,8 +3,8 @@
 $flipCardSize:160px;
 $flipCardImageSize: 90px;
 .knowledge{
-
-    @include centeredFullPage($baseColor);
+    padding: 50px;
+    @include centeredFullPage(white);
     position:relative;
     > div:first-child{
         @include sectionSubTitle;
@@ -15,7 +15,7 @@ $flipCardImageSize: 90px;
 
     }
     .raw {
-        max-width: 900px;
+        max-width: 720px;
         margin: auto;
         margin-top: 0;
         top: 0;
@@ -39,7 +39,6 @@ $flipCardImageSize: 90px;
     .flip-container,
     .front,
     .back {
-
         width: $flipCardSize;
         height: $flipCardSize;
         // line-height: $flipCardSize;
@@ -81,25 +80,29 @@ $flipCardImageSize: 90px;
     /* back side */
    
     .back {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        flex-direction: column;
         transform: rotateY(180deg);
         border: 1px solid white;
         border-radius: $bordRad;
-        background-color: $baseAnalogColor2;
-        color: white;
+        background-color: $baseColorTran;
+        color: black;
         text-align: center;
        
     
         .flipCardTitle {
             padding-top: 3px;
-            font-size: 3em;
+            font-size: 2em;
             font-weight: bold;
-            margin-top: 0px;
+            margin: 0px;
             
         }
         
         .flipCardTitle +p{
-            font-size: 1.6em;
+            font-size: 1.3em;
         }
     }
     

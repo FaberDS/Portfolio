@@ -1,0 +1,8 @@
+@import '../../theme/color.scss';
+@import '../../theme/basic.scss';
+.componentContainer{
+    @include centeredFullPage(white);
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}

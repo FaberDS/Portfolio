@@ -18,6 +18,9 @@
     }
     .contactBar {
         margin-top: 20px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
         > div{
             display: inline;
             @include iconHover(white,black);

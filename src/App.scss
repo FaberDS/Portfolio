@@ -1,12 +1,19 @@
 @import './theme/color.scss';
 @import './theme/basic.scss';
 @import './theme/btn.scss';
+html,body{
+    height: 100%;
+}
 html{
     scroll-behavior: smooth;
     box-sizing: border-box;
 
 }
 .app{
+    .paralex{
+        @include paralexBackground();
+    }
+    
     #backTopBtn{
         display: none;
         position: fixed;
@@ -19,3 +26,8 @@ html{
         @include iconHover(white,black);     
     }
 }
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }

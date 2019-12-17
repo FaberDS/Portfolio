@@ -1,16 +1,24 @@
 @import '../../theme/color.scss';
 @import '../../theme/basic.scss';
 .services{
-    @include centeredFullPage($baseColor);
-    h3{
-        @include sectionSubTitle;
+    @include centeredFullPage(rgba(0,0,0,0));
+    align-items: center;
+    justify-content: center;
+    .servicesInnerbox{
+        padding: 20px;
+        text-align: center;
+        background-color: $baseColorTran;
+        h3{
+            @include sectionSubTitle;
+        }
+        h2{
+            @include sectionTitle;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+                
+        }  
     }
-    h2{
-        @include sectionTitle;
-    }
-    .row{
-        display: flex;
-        justify-content: space-around;
-            
-    }  
+    
 }

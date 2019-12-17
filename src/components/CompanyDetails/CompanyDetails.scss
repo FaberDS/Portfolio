@@ -1,0 +1,80 @@
+@import '../../theme/color.scss';
+@import '../../theme/basic.scss';
+// @keyframes change-content {
+//     from { justify-content: flex-end; }
+//     to { justify-content: flex-start; }
+// }
+// @keyframes slidein {
+
+//     to{left:0}
+// }
+$widthImg: 200px;
+$transistionDurationImg: 1s;
+$transitionDurationText: 1s;
+$transistionDurationTextDisapear: .01s;
+@mixin  transSlow {
+    -webkit-transition: all $transitionDurationText ease-in;
+    -moz-transition: all $transitionDurationText ease-in;
+    -o-transition: all $transitionDurationText ease-in;
+    transition: all $transitionDurationText ease-in;
+}
+@mixin transFast{
+    -webkit-transition: all $transistionDurationTextDisapear ease-out;
+    -moz-transition: all $transistionDurationTextDisapear ease-out;
+    -o-transition: all $transistionDurationTextDisapear ease-out;
+    transition: all $transistionDurationTextDisapear ease-out;
+}
+.companyDetails{
+    height: 200px;
+    width: 100%;
+    z-index: 99;
+    // background-color: green;
+    // border: 1px solid black;
+    position: relative;
+    &:hover a, &:active a
+    {
+       left: 0;
+    }
+    &:hover .detailsText, &:active .detailsText{
+        opacity:1;
+        left: $widthImg +100px;
+       
+    }
+    
+    >a {
+        z-index:100;
+        width: $widthImg;
+        height: $widthImg;
+        // background: orange;
+        position: absolute;
+        left: calc(100% - 200px);
+        @include centerItems;
+        transition:$transistionDurationImg  ease-in;
+        -webkit-transition:$transistionDurationImg  ease-in;
+        -moz-transition:$transistionDurationImg  ease-in;
+        img{
+            width: 150px;
+        }
+    }
+    .detailsText{
+        width: 300px;
+        position: absolute;
+        left: 100%;
+        opacity: 0;
+        
+        // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+        // -moz-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+        // -o-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+        // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+        @include transSlow;
+    }
+    // .detailsText.hide{
+    //     @include transFast;
+    //     // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+    //     // -moz-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+    //     // -o-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+    //     // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+    // }
+
+
+}

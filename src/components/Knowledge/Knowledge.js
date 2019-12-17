@@ -4,10 +4,10 @@ import pngs from '../../const/pngs.js';
 
 
 // const images =[bootstrap,css];
-const background ="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80";
+// const background ="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80";
 // const background="../../../images/heroImage.jpg";
 const heroStyle ={
-    "backgroundImage": `url( ${background})`,
+    // "backgroundImage": `url( ${background})`,
     "backgroundSize": "cover"
 }
 class Knowledge extends Component {

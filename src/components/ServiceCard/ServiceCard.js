@@ -1,12 +1,14 @@
 import React from 'react'
-import './ServiceCard.css';
+import './ServiceCard.scss';
 const ServiceCard = (props) => {
     const {icon, serviceTitle, serviceSubtitle} = props
     return (
         <div className="serviceCard">
-            <span><i className={icon}></i></span>
-            <h4>{serviceTitle}</h4>
-            <p>{serviceSubtitle}</p>
+            <div className="cardIcon"><i className={icon}></i></div>
+            <div className="cardContent">
+                <p>{serviceTitle}</p>
+                <span>{serviceSubtitle}</span>
+            </div>
         </div>
     )
 }

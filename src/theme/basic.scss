@@ -1,14 +1,32 @@
 @import './color.scss';
 $genPadding: 10px;
-$bordRad: 5px;
+$bordRad: 0px;
+@mixin paralexBackground(){   
+    margin-top:-80px;
+    /* The image used */
+//   background-image: url($img);
+  /* Full height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+       
+}
+@mixin centerItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @mixin centeredFullPage($bcolor) {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: $bcolor;
-    height: 100vh;
+    min-height: 900px;
+    margin-bottom: 100px;
     padding-top: 100px;
-    >div{max-width: 900px;}
+    >div{max-width: 1200px;}
 }
 @mixin sectionTitle(){
     color: $baseContrastColor;
@@ -41,5 +59,11 @@ $bordRad: 5px;
         color: $secColor;
         background-color: $mainColor;
     }
+}
+@mixin BluePaper(){
+    background: #58a;
+    background-image: linear-gradient(white 2px, transparent 0),linear-gradient(90deg, white 2px, transparent 0),linear-gradient(hsla(0,0%,100%,.3) 1px, transparent 0),linear-gradient(90deg, hsla(0,0%,100%,.3) 1px , transparent 0);
+    background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+    
 }
 

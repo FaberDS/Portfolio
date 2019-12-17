@@ -1,44 +1,53 @@
 @import '../../theme/color.scss';
 @import '../../theme/basic.scss';
-.serviceCard {
-    display: flex;
-    max-width: 200px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $baseContrastColor;
-    padding: 1.5em;
-    border: 1.5px solid $transparent;
-    &:hover{
-        border: 1.5px solid $secondBaseColor; 
-    }
-    span{
-        background-color: $baseContrastColor;
-        width: 112px;
-        height: 112px;
-        border-radius: 50%;
-        color: $baseColor;
-        font-size: 3em;
-        line-height: 120px;
-        display: table-cell;
-        vertical-align: middle; 
-        text-align: center;
-        border: 1px solid $baseContrastColor;
-
-        &:hover, &:active {
-            color: $baseContrastColor;
-            background-color: $baseColor;
-            cursor: pointer;
+.row{
+    flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    .serviceCard {
+        display: flex;
+        width: 200px;
+        height: 250px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: $baseContrastColor;
+        padding: 1.5em;
+    
+        .cardIcon{
+            // background-color: $baseContrastColor;
+            height: 50%;
+            width: 1005;
+            i{
+                width: 112px;
+                height: 112px;
+                border-radius: $bordRad;
+                color: $baseColor;
+                background-color: $baseContrastColor;
+                font-size: 3em;
+                line-height: 120px;
+                display: table-cell;
+                vertical-align: middle; 
+                text-align: center;
+                border: 1px solid $baseContrastColor;
+            }
+            
         }
-    }
-    h4{
-        font-size: 1.5em;
-        margin-bottom: 8px;
-        font-weight: 500;
-        line-height: 1.2;
+        .cardContent{
+            text-align: center;
+            p{
+                color:$secondBaseColor;
+                font-size: 1.5em;
+                margin-bottom: 8px;
+                font-weight: 600;
+                line-height: 1.2;
+            }
+            span{
+                text-align: center;
+                font-size: 1em;
+            }
+        }
         
-    }
-    p{
-        font-size: 1em;
     }
 }

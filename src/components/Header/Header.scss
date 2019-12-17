@@ -3,13 +3,13 @@
 .header{
     margin: 0 auto;
     text-align:center;
-    color: rgb(33,37,41);
+    color: $baseContrastColor;
     height: 100vh;
     min-height: 400px;
     min-width: 300px;
     h1{
         margin: 0;
-        padding-top: 30vh;
+        padding-top: 8vh;
         font-size: 4rem;
     }
     p{
@@ -17,6 +17,7 @@
         font-size: 1.75rem;
         margin-bottom: 30px;
         font-style: italic;
+        color: $secondBaseColor
     }
     a{
         font-weight: 700;
