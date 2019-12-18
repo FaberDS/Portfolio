@@ -8,14 +8,15 @@ class ComponentContainer extends Component {
 
     render() {
         console.log(this.props)
-        const {history} = this.props;
+        const {history, ID} = this.props;
         console.log("history")
         console.log(history)
         const details = history && history.it && history.it.map((company,i) => {
             return <ComponentDetails key={i++}{...company} {...history}/>
         })
         return (
-            <div className="componentContainer">
+            <div className="componentContainer" id={ID}>
+                <h2>{history.title}</h2>
                 {details}
             </div>
         )

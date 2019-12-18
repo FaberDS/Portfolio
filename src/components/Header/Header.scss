@@ -12,11 +12,10 @@
         padding-top: 8vh;
         font-size: 4rem;
     }
-    p{
+    h2{
         font-weight: 700;
         font-size: 1.75rem;
         margin-bottom: 30px;
-        font-style: italic;
         color: $secondBaseColor
     }
     a{
@@ -29,5 +28,10 @@
     }
     a:hover{
         border-color: $baseContrastColor;
+    }
+    @include md{
+        h1{
+            padding-top: 15%;
+        }
     }
 }

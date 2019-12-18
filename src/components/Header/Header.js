@@ -14,7 +14,7 @@ class Header extends Component{
             // <header className="header" style={heroStyle}>
             <header className="header" >
                 <h1>{headerTitle}</h1>
-                <p>{subTitle}</p>
+                <h2>{subTitle}</h2>
                 
             </header>
         )

@@ -29,12 +29,15 @@ $marginDetails: 30px;
     transition: all $transistionDurationTextDisapear ease-out;
 }
 .companyDetails{
-    // height: 200px;
+    height: 200px;
     width: 100%;
     z-index: 99;
     // background-color: green;
     // border: 1px solid black;
+   
     position: relative;
+    
+   
     >a {
         z-index:100;
         width: $widthImg;
@@ -75,6 +78,15 @@ $marginDetails: 30px;
         >a.hover, >a.active{
                 display:none;
             }
+        &:hover a, &:active a
+        {
+           left: 0;
+        }
+        &:hover .detailsContainer, &:active .detailsContainer{
+            opacity:1;
+            // left: $widthImg + 220px;
+           
+        }
         }
     
     @include md{
@@ -86,15 +98,7 @@ $marginDetails: 30px;
     
   
        @include lg{
-        &:hover a, &:active a
-        {
-           left: 0;
-        }
-        &:hover .detailsContainer, &:active .detailsContainer{
-            opacity:1;
-            // left: $widthImg + 220px;
-           
-        }
+        
        }
     
     }

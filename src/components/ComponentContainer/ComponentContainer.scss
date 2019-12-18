@@ -4,12 +4,14 @@
     @include centeredFullPage(white);
     width: 80%;
     margin: 0 auto;
-    justify-content: space-evenly;
     box-sizing: border-box;
-    padding-top: 0px;
+    h2{
+        @include sectionTitle;
+        color: #444;    
+    }
     @include md{
         justify-content: center;
-
+        min-height: 1000px;
         width: 95%;
     }
 }

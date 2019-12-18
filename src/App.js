@@ -9,7 +9,8 @@ import txt from "./const/content";
 import base from "./basicFunctionality/Actions";
 import ThatsMe from "./components/ThatsMe/ThatsMe";
 import paraImg from "./images/laptopC.png";
-import paraImg2 from "./images/phone.jpeg";
+import codeImg from "./images/code.jpeg";
+import paraImg3 from "./images/phone.jpeg";
 import  ComponentContainer from './components/ComponentContainer/ComponentContainer';
 const sections = txt.navigationSections;
 const paralexStyle = {
@@ -17,8 +18,13 @@ const paralexStyle = {
   minHeight: "100vh",
   height: "100%"
 };
-const paralexStyle2 = {
-  backgroundImage: `url(${paraImg2})`,
+const paralexStyle2= {
+  backgroundImage: `url(${codeImg})`,
+  minHeight: "20vh",
+  height: "200px !important"
+};
+const paralexStyle3 = {
+  backgroundImage: `url(${paraImg3})`,
   minHeight: "10vh",
   height: "200px !important"
 };
@@ -36,14 +42,16 @@ class App extends Component {
         {/* <div>
             <h1>Life long learning</h1>
         </div> */}
-          {/* <ThatsMe ID={txt.navigationSections[0] }{...txt} /> */}
-        <ComponentContainer {...txt}/>
-        <div className="paralex" style={paralexStyle2}>
-        <ServiceSection {...txt} ID={txt.navigationSections[1]} />
+          <ThatsMe ID={txt.navigationSections[0] }{...txt} />
+          <div className="paralex" style={paralexStyle2}></div>
+        <ComponentContainer {...txt} ID={txt.navigationSections[1]}/>
+        
+        <div className="paralex" style={paralexStyle3}>
+        <ServiceSection {...txt} ID={txt.navigationSections[2]} />
         </div>
 
         
-        <Knowledge {...txt} ID={txt.navigationSections[2]} />
+        <Knowledge {...txt} ID={txt.navigationSections[3]} />
         <Footer {...txt} />
         <div id="backTopBtn" className="btn">
           <i className="fas fa-chevron-up"></i>
@@ -60,6 +68,9 @@ class App extends Component {
 window.addEventListener("scroll", () => {
   base.recognizeScrolling(document.getElementById("backTopBtn"), "topNavBar");
 });
+document.addEventListener("resize", (event)=>{
+  console.log(event)
+})
 
 
 export default App;

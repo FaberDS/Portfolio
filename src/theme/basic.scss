@@ -1,7 +1,7 @@
 @import './color.scss';
 $genPadding: 10px;
 $bordRad: 0px;
-
+$headings : h1 h2 h3 h4 h5 h6;
 
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
@@ -57,7 +57,14 @@ $screen-xl-min: 1200px;
        
 }
 
-
+$mainFont: 'Cantarell', sans-serif;
+$subFont: 'Patrick Hand', cursive;
+@each $heading in $headings{
+    #{$heading} {
+      font-family: $mainFont;
+    }
+  
+  }
 // Custom devices
 @mixin rwd($screen) {
     @media (min-width: $screen+'px') {

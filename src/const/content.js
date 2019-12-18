@@ -6,9 +6,11 @@ import campus02Logo from '../images/firmenLogos/campus02Logo.png';
 import campus02Img from '../images/firmenLogos/campus02.png';
 import codefactoryLogo from '../images/firmenLogos/codefactoryLogo.jpg';
 import codefactoryImg from '../images/firmenLogos/codefactory.png';
+import faberLogo from '../images/faberLogo.png'
 const txt ={
-    navigationSections: ['That\'s me','Possibilities','Knowledge','Contact me'],
-    logoTitle: "Portfolio",
+    navigationSections: ['That\'s me','Career Path','Possibilities','Knowledge','Contact me'],
+    logoTitle: "Faber Design",
+    logo: faberLogo,
     headerTitle : "Denis",
     subTitle: "another portfolio",
     heroBtn:"See more",
@@ -17,10 +19,14 @@ const txt ={
     githubLink: "https://github.com/FaberDS",
     contactMailAddress: "denis.schuele@edu.campus02.at",
     contactMailSubject: "Website contact!",
-   
+   thatsMe:{
+       vision: "Visualize your life"
+   },
     history:{
+        title: "Career path",
         historyDetails:{
             position: "Position",
+            
             
         },
         it:[

@@ -10,21 +10,19 @@ class ThatsMe extends Component {
   }
 
   render() {
-    const { ID, history } = this.props;
+    const { ID, history,logo,thatsMe,navigationSections} = this.props;
     console.log(history)
     return (
     
       <div className="thatsMe" id={ID}>
+        <h2>{navigationSections[0]}</h2>
         <div className="row">
           <div className="Column-1-3">
-            <div id="vision" className="note">
-              <p>My vision: </p>
-              loremMollit cupidatat eiusmod aliqua ad velit laboris eu laboris
-              irure. Adipisicing enim sunt anim esse non do dolore. Eu aliquip
+            <div id="logo" className="note">
+             <img src={logo}/>
             </div>
-            <div className="besideColumn">
-              nulla incididunt ut do ea. Ullamco consequat eiusmod aute
-              cupidatat
+            <div id="vision" className="besideColumn">
+             <p>{thatsMe.vision}</p>
             </div>
           </div>
 
