@@ -9,9 +9,11 @@
 //     to{left:0}
 // }
 $widthImg: 200px;
-$transistionDurationImg: 1s;
-$transitionDurationText: 1s;
+$transistionDurationImg: .5s;
+$transitionDurationText: 2s;
 $transistionDurationTextDisapear: .01s;
+$companyImgSize: 120px;
+$marginDetails: 30px;
 @mixin  transSlow {
     -webkit-transition: all $transitionDurationText ease-in;
     -moz-transition: all $transitionDurationText ease-in;
@@ -35,9 +37,9 @@ $transistionDurationTextDisapear: .01s;
     {
        left: 0;
     }
-    &:hover .detailsText, &:active .detailsText{
+    &:hover .detailsContainer, &:active .detailsContainer{
         opacity:1;
-        left: $widthImg + 220px;
+        // left: $widthImg + 220px;
        
     }
     
@@ -56,28 +58,93 @@ $transistionDurationTextDisapear: .01s;
             width: 150px;
         }
     }
-    .detailsText{
+    .detailsContainer{
 
         // background-color: violet;
-        width: 300px;
+        width: 550px;
         position: absolute;
-        left: 100%;
+        padding: $genPadding*2;
+        // left: 100%;
+        left: $widthImg + 220px;
         top: 15%;
         opacity: 0;
-        
+        display: flex;
+        flex-direction: row;
+
         // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         // -moz-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         // -o-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         @include transSlow;
+
+
+        .companyImgContainer{
+            width: $companyImgSize;
+            height: $companyImgSize;
+            margin-right: $marginDetails;
+            
+            border-radius: 50%;
+                a{
+                    img{
+                    width:$companyImgSize;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .detailsTextContainer{
+            // display: flex;
+            // flex-direction: column;
+            color: $softBlack;
+            .detailsTextHeadline{
+                display:flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                a{
+                    margin-right: $marginDetails*2;
+                    display:inline;
+                    h3{
+                        font-size: 1.8em;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+                .timePeriode{
+                    color: $softBlack;
+                    float: right;
+                    padding-top:10px;
+                    display: block;
+                    font-size: .8em;
+                    i{
+                        margin-right: $marginDetails/2;
+                    }
+                    
+                }
+            }
+            .detailSubtextContainer{
+                .detailSubtext{
+                    margin-top: 10px;
+                }
+            }
+           
+           
+            
+        }
+        
     }
-    .detailsText.hide{
+    .detailsContainer.hide{
         @include transFast;
         // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         // -moz-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         // -o-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
     }
-
-
+    
+.text-seperator{
+    margin: 0 10px;
+}
+.detailSubject{
+    margin-right: 12px;
+    font-weight: 500;
+    font-size: 1em;
+}
 }
