@@ -1,6 +1,7 @@
 @import './theme/color.scss';
 @import './theme/basic.scss';
 @import './theme/btn.scss';
+
 html,body{
     height: 100%;
 }
@@ -26,8 +27,23 @@ html{
         @include iconHover(white,black);     
     }
 }
+
 @media only screen and (max-device-width: 1366px) {
     .parallax {
       background-attachment: scroll;
     }
   }
+@include md{
+    h1{
+        font-size:1.8em!important;
+    }
+    h2{
+        font-size: 1.5em !important;
+    }
+    h3{
+        font-size:1.3em!important;
+    }
+    p{
+        font-size: 1em!important;
+    }
+}

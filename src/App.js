@@ -36,7 +36,7 @@ class App extends Component {
         {/* <div>
             <h1>Life long learning</h1>
         </div> */}
-          <ThatsMe ID={txt.navigationSections[0] }{...txt} />
+          {/* <ThatsMe ID={txt.navigationSections[0] }{...txt} /> */}
         <ComponentContainer {...txt}/>
         <div className="paralex" style={paralexStyle2}>
         <ServiceSection {...txt} ID={txt.navigationSections[1]} />

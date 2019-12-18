@@ -8,6 +8,8 @@
 
 //     to{left:0}
 // }
+
+
 $widthImg: 200px;
 $transistionDurationImg: .5s;
 $transitionDurationText: 2s;
@@ -27,67 +29,124 @@ $marginDetails: 30px;
     transition: all $transistionDurationTextDisapear ease-out;
 }
 .companyDetails{
-    height: 200px;
+    // height: 200px;
     width: 100%;
     z-index: 99;
     // background-color: green;
     // border: 1px solid black;
     position: relative;
-    &:hover a, &:active a
-    {
-       left: 0;
-    }
-    &:hover .detailsContainer, &:active .detailsContainer{
-        opacity:1;
-        // left: $widthImg + 220px;
-       
-    }
-    
     >a {
         z-index:100;
         width: $widthImg;
         height: $widthImg;
         // background: orange;
-        position: absolute;
-        left: calc(100% - 200px);
+        
         @include centerItems;
-        transition:$transistionDurationImg  ease-in;
-        -webkit-transition:$transistionDurationImg  ease-in;
-        -moz-transition:$transistionDurationImg  ease-in;
-        img{
-            width: 150px;
+       
+        @include md{
+            width: $widthImg/2;
+            height: $widthImg/2;
+            left: 0px;
+            position:relative;
+            flex-direction: column;
         }
+    
+        @include lg{
+            transition:$transistionDurationImg  ease-in;
+            -webkit-transition:$transistionDurationImg  ease-in;
+            -moz-transition:$transistionDurationImg  ease-in;
+            position: absolute;
+            left: calc(100% - 200px);
+            
+        }
+
+        img{
+            width: $widthImg;
+            @include md{
+                width: $widthImg*(2/3);
+            }
+        }
+      
+       
+            
+        
+    }
+    @include lg{
+        >a.hover, >a.active{
+                display:none;
+            }
+        }
+    
+    @include md{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  
+       @include lg{
+        &:hover a, &:active a
+        {
+           left: 0;
+        }
+        &:hover .detailsContainer, &:active .detailsContainer{
+            opacity:1;
+            // left: $widthImg + 220px;
+           
+        }
+       }
+    
     }
     .detailsContainer{
-
+        
         // background-color: violet;
         width: 550px;
         position: absolute;
         padding: $genPadding*2;
         // left: 100%;
-        left: $widthImg + 220px;
+        
         top: 15%;
         opacity: 0;
         display: flex;
         flex-direction: row;
 
-        // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-        // -moz-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-        // -o-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-        // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
         @include transSlow;
 
+        @include md{
+            opacity:1;
+            width: 100%;
+            position: relative;
+            left: 0;
+            padding: $genPadding;
+            display: flex;
+            justify-content: center;
 
+        }
+        @include lg{
+            left: 190px;
+        }
+        @include xl{
+            width: 700px;
+            left: $widthImg + 220px;
+        }
+        
         .companyImgContainer{
-            width: $companyImgSize;
-            height: $companyImgSize;
+            // width: $companyImgSize;
+            // height: $companyImgSize;
             margin-right: $marginDetails;
             
             border-radius: 50%;
+            @include md{
+                margin-right: $marginDetails/2;
+            }
                 a{
                     img{
                     width:$companyImgSize;
                     border-radius: 50%;
+                    @include md{
+                        width: $companyImgSize/2;
+                    }
                 }
             }
         }
@@ -95,6 +154,9 @@ $marginDetails: 30px;
             // display: flex;
             // flex-direction: column;
             color: $softBlack;
+            @include md{
+                font-size: .7em;
+            }
             .detailsTextHeadline{
                 display:flex;
                 justify-content: space-between;
@@ -131,13 +193,13 @@ $marginDetails: 30px;
         }
         
     }
-    .detailsContainer.hide{
-        @include transFast;
-        // -webkit-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-        // -moz-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-        // -o-transition: right 0.3s ease-out, opacity 1s ease 0.5s;
-        // transition: right 0.3s ease-out, opacity 1s ease 0.5s;
+    @include lg{
+        .detailsContainer.hide{
+            @include transFast;
+         
+        }
     }
+    
     
 .text-seperator{
     margin: 0 10px;
@@ -146,5 +208,4 @@ $marginDetails: 30px;
     margin-right: 12px;
     font-weight: 500;
     font-size: 1em;
-}
 }
