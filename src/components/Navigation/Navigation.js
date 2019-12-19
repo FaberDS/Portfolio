@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Navigation.scss';
-import base from '../../basicFunctionality/Actions';
 class Navigation extends Component{
   constructor(props){
     super(props);

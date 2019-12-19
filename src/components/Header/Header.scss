@@ -1,34 +1,11 @@
-@import '../../theme/color.scss';
 @import '../../theme/basic.scss';
 .header{
-    margin: 0 auto;
-    text-align:center;
+    width: 100%;
     color: $baseContrastColor;
     height: 100vh;
-    min-height: 400px;
-    min-width: 300px;
+    @include centerItemsDir(column, center,no)
     h1{
-        margin: 0;
         padding-top: 8vh;
-        font-size: 4rem;
-        color: green;
-    }
-    h2{
-        font-weight: 700;
-        font-size: 1.75rem;
-        margin-bottom: 30px;
-        color: $secondBaseColor
-    }
-    a{
-        font-weight: 700;
-        background-color: $baseColor;
-        color: white;
-        font-weight: 700;
-        display: inline-block;
-        padding: 1.25rem 2.5rem;
-    }
-    a:hover{
-        border-color: $baseContrastColor;
     }
     @include md{
         h1{

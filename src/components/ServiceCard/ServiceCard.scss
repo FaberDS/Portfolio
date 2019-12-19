@@ -1,51 +1,51 @@
-@import '../../theme/color.scss';
 @import '../../theme/basic.scss';
 .row{
-    flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
+    @include centerItemsDir(row,center,flex-start);
+    flex-wrap: wrap;
     .serviceCard {
-        display: flex;
-        width: 200px;
-        height: 250px;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        width: $logoImgWidthMobil;
+        height: 300px;
+        @include centerItemsDir(column,center,flex-start);
         color: $baseContrastColor;
-        padding: 1.5em;
-    
+        padding: 1em;
         .cardIcon{
-            // background-color: $baseContrastColor;
-            height: 50%;
-            width: 1005;
+            margin-bottom: $genMargin;
             i{
-                width: 112px;
-                height: 112px;
+                width: $logoImgWidth;
+                height: $iconHeight;
                 border-radius: $bordRad;
                 color: $baseColor;
                 background-color: $baseContrastColor;
                 font-size: 3em;
-                line-height: 120px;
+                line-height: $iconHeight;
                 display: table-cell;
                 vertical-align: middle; 
                 text-align: center;
-                border: 1px solid $baseContrastColor;
             }
             
         }
         .cardContent{
             text-align: center;
+            font-size: 1em;
             p{
                 color:$secondBaseColor;
-                font-size: 1.5em;
-                margin-bottom: 8px;
+                font-size: 1.2em;
                 font-weight: 600;
                 line-height: 1.2;
             }
             span{
                 text-align: center;
-                font-size: 1em;
+                font-size: .8em;
+            }
+        }
+        @include lg{
+            width: 50%;
+            font-size: 1.2em;
+            .cardIcon{
+                i{
+                    width: $logoImgWidth;
+                    height: $logoImgWidth;
+                }
             }
         }
         

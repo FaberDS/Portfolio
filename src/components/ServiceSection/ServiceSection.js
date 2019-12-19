@@ -8,9 +8,9 @@ class ServiceSection extends Component {
         const services = ServiceSectionContent.services.map( (s, i=0) => <ServiceCard {...s} key={i++}/>)
         return (
             <div className='services' id={ID}>
+                <h2 className="sectionTitle">{ServiceSectionContent.serviceSubHeader}</h2>
                 <div className="servicesInnerbox">
-                    <h3>{ServiceSectionContent.serviceHeader}</h3>
-                    <h2>{ServiceSectionContent.serviceSubHeader}</h2>
+                    
                     <div className="row">
                         {services}
                     </div>

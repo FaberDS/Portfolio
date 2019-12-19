@@ -1,16 +1,7 @@
 @import './color.scss';
 @import './reset.scss';
 @import './responsive.scss';
-$genPadding: 10px;
-$genMargin: 15px;
-$bordRad: 0px;
-$genFontSizeMobil: 14px;
-$genFontSize: 18px;
-$logoImgWidth: 200px;
-$logoImgWidthMobil: calc(#{$logoImgWidth}*(3/4));
-$mainFont: 'Cantarell', sans-serif;
-$subFont: 'Patrick Hand', cursive;
-
+@import './defaultValues.scss';
 @mixin paralexBackground(){   
     margin-top:-80px;
     /* The image used */
@@ -50,31 +41,48 @@ $headings : h1 h2 h3 h4 h5 h6;
 }
 @mixin centeredFullPage($bcolor) {
     font-size: $genFontSize;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: $bcolor;
     min-height: 900px;
     margin-bottom: 100px;
-    padding-top: 100px;
+    padding-top: $padCenterPageMobil;
+    padding-bottom: $padCenterPageMobil;
     >div{max-width: 1200px;}
+    @include md{
+        
+    }
     @include lg{
+        padding-top: $padCenterPage;
         font-size: $genFontSize;
     }
 
 }
 @mixin sectionTitle(){
     color: $baseContrastColor;
-    font-size: 3em;
+    font-size: $genSectionTitleSizeMobile;
     font-weight: bold;
+    margin-bottom: $genMargin;
+    @include lg{
+        font-size:$genSectionTitleSize;
+    }
+}
+.sectionTitle{
+    @include sectionTitle;
 }
 @mixin sectionSubTitle(){
     margin: 0;
-    padding: 0;
-    font-size: 26px;
+    padding: $genPadding;
+    font-size: $genSectionTitleSize;
     font-weight: 700;
     text-transform: uppercase;
     color: $secondBaseColor;
+}
+.sectionSubTitle{
+    @include sectionSubTitle;
 }
 @mixin iconHover($mainColor, $secColor){
     border-color: $mainColor;
