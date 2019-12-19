@@ -20,17 +20,19 @@ const txt ={
     contactMailAddress: "denis.schuele@edu.campus02.at",
     contactMailSubject: "Website contact!",
    thatsMe:{
-       vision: "Finding and loving a job, enriches the whole life",
-       intro: "Computer science is more than a job for me. Computer science offers the possibility to change the world from an office. Computer science gives us the opportunity to help millions of people.",
-       main: "With computer science I want to make my contribution to the overall welfare of mankind. To achieve this I will have to overcome many hurdles, but I know that with a solid education and growing professional experience nothing stands in the way of this goal. With every working day, with every experience I get a little bit closer to this goal.",
-       poente: "My enthusiasm for new technologies and digital change is exceeded only by my ambition."
+       vision: "Eine Tätigkeiten zu finden und zu lieben, bereichert das ganze Leben",
+       intro: "Informatik ist für mich mehr als ein Job. Informatik bietet die Möglichkeit, die Welt vom Büro aus zu verändern. Die Informatik gibt uns die Möglichkeit, Millionen von Menschen zu helfen.",
+       main: "Ich will mit Informatik meinen Beitrag zum Gesamtwohl der Menschheit erbringen. Um dies zu erreichen werde ich noch viele Hürden überwinden müssen, doch  ich weiß, dass mit einer fundierten Ausbildung und wachsender beruflicher Erfahrung diesem Ziel nichts im Wege steht. Mit jedem Arbeitstag, mit jeder Erfahrung komme ich diesem Ziel ein bisschen näher.",
+       poente: "Meine Begeisterung für neue Technologien und den digitalen Wandel wird ausschließlich von meinem Ehrgeiz übertroffen."
    },
     history:{
         title: "Career path",
         historyDetails:{
             position: "Position",
             title: "Title",
-            thematicArea: " Thematic area"   
+            thematicArea: " Thematic area"
+            
+            
         },
         it:[
             {logo: dccsLogo,

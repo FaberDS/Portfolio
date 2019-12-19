@@ -12,7 +12,7 @@ class ComponentContainer extends Component {
         console.log("history")
         console.log(history)
         const details = history && history.it && history.it.map((company,i) => {
-            return <ComponentDetails key={i++}{...company} {...history}/>
+            return <ComponentDetails key={i++}{...company} historyDetails={history.historyDetails}/>
         })
         return (
             <div className="componentContainer" id={ID}>

@@ -20,7 +20,7 @@ class CompanyDetails extends Component {
         console.log(this.state);
     }
   render() {
-    const { logo, linkTo, title, subtext, fromDate, toDate, Img,position,historyDetails} = this.props;
+    const { logo, linkTo, title, subtext, fromDate, toDate, isWork, thematicArea, Img,position,historyDetails} = this.props;
     console.log("Test")
     console.log(position)
     console.log(historyDetails)
@@ -47,8 +47,15 @@ class CompanyDetails extends Component {
             </div>
            
               <div className=" detailSubtextContainer">
-                <span className="detailSubject">{historyDetails.position}:</span>
-                <span>{position}</span>
+                <p>
+                  <span className="detailSubject">{ isWork ?  historyDetails.position : historyDetails.title}:</span>
+                  <span>{position}</span>
+                </p>
+                <p>
+                  <span className="detailSubject">{ historyDetails.thematicArea}:</span>
+                  <span>{thematicArea}</span>
+                </p>
+                
                 <p className=" detailSubtext">{subtext}</p>
               </div>
           </div>
