@@ -11,10 +11,10 @@ class Navigation extends Component{
   render(){
     const {sections, contactMailAddress,logoTitle ,contactMailSubject} = this.props;
  
-    const navLinks = sections.map((section, i) => <a onClick={this.closeMobileNavbar} href={section!=='Contact me' ? '#' + section : 'mailto:'+contactMailAddress + '?subject=' +contactMailSubject}>{section}</a>)
+    const navLinks = sections.map((section, i) => <a onClick={this.closeMobileNavbar} href={'#'+section}>{section}</a>)
     return (
       <nav id="topNavBar">
-        <h2 className="logoTitle">{logoTitle}</h2>
+        <h2 className="logoTitle"><a href="#landingPage">{logoTitle}</a></h2>
         <input type="checkbox" id="nav-check"/>
 
         <div className="nav-btn">

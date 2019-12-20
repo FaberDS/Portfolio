@@ -16,16 +16,16 @@ class Knowledge extends Component {
         const {titles} = pngs;
         const {ID,KnowledgeSection}= this.props;
         return(
-            <div className="knowledge" id={ID}  style={heroStyle}>
-                <div className="sectionSubTitle">{KnowledgeSection.sectionSubTitle}</div>
+            <div className="knowledge" id={KnowledgeSection.sectionTitle}  style={heroStyle}>
                 <div className="sectionTitle">{KnowledgeSection.sectionTitle}</div>
+                <div className="sectionSubTitle">{KnowledgeSection.sectionSubTitle}</div>
                 <div className="raw">
                     {pngs.map((png,i) =>{
                         return(
                             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
                                 <div className="flipper">
                                 <div className="front">
-                                    <img src={png.src}/>
+                                    <img src={png.src} alt={png.title + ' Image'}/>
                                 </div>
                                 <div className="back">
                                     <p className="flipCardTitle">{png.title}</p>

@@ -40,6 +40,7 @@ $headings : h1 h2 h3 h4 h5 h6;
     flex-direction: $direction;
 }
 @mixin centeredFullPage($bcolor) {
+    position:relative;
     font-size: $genFontSize;
     width: 90%;
     margin: 0 auto;
@@ -76,7 +77,7 @@ $headings : h1 h2 h3 h4 h5 h6;
 @mixin sectionSubTitle(){
     margin: 0;
     padding: $genPadding;
-    font-size: $genSectionTitleSize;
+    font-size: calc(#{$genSectionTitleSize} *(2/3));
     font-weight: 700;
     text-transform: uppercase;
     color: $secondBaseColor;

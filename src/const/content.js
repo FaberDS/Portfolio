@@ -8,7 +8,7 @@ import codefactoryLogo from '../images/firmenLogos/codefactoryLogo.jpg';
 import codefactoryImg from '../images/firmenLogos/codefactory.png';
 import faberLogo from '../images/faberLogo.png'
 const txt ={
-    navigationSections: ['That\'s me','Career Path','Possibilities','Knowledge','Contact me'],
+    navigationSections: ['That\'s me','Project','Career path','Future','Technologies','Contact me'],
     logoTitle: "Faber Design",
     logo: faberLogo,
     headerTitle : "Denis",
@@ -25,8 +25,12 @@ const txt ={
        main: "With computer science I want to make my contribution to the overall welfare of mankind. To achieve this I will have to overcome many hurdles, but I know that with a solid education and growing professional experience nothing stands in the way of this goal. With every working day, with every experience I get a little bit closer to this goal.",
        poente: "My enthusiasm for new technologies and digital change is exceeded only by my ambition."
    },
+   showCase:{
+    sectionTitle: 'Project',
+    sectionSubTitle: ''
+   },
     history:{
-        title: "Career path",
+        sectionTitle: "Career path",
         historyDetails:{
             position: "Position",
             title: "Title",
@@ -73,12 +77,15 @@ const txt ={
     },
     
     KnowledgeSection:{
-        sectionTitle: 'I worked with',
-        sectionSubTitle: 'Technologies'
+        sectionTitle: 'Technologies',
+        sectionSubTitle: 'I worked with'
+    },
+    Contact:{
+        sectionTitle: 'Contact me'
     },
     ServiceSectionContent: {
-        serviceHeader : "Possibilities",
-        serviceSubHeader : "Fields I would like to work in",
+        sectionTitle : "Future",
+        sectionSubTitle : "Fields I would like to work in",
         services:[
             {
                 serviceTitle: 'Webdevelopment',

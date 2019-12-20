@@ -1,15 +1,14 @@
-@import '../../theme/color.scss';
 @import '../../theme/basic.scss';
 .componentContainer{
     @include centeredFullPage(white);
     width: 80%;
-    margin: 0 auto;
     box-sizing: border-box;
-    h2{
+    .sectionTitle{
         @include sectionTitle;
-        color: #444;    
+        color: $darkContrast;    
     }
     @include md{
+        margin-bottom: 200px;
         justify-content: center;
         min-height: 1000px;
         width: 95%;

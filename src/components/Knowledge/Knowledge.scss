@@ -1,19 +1,12 @@
-@import '../../theme/color.scss';
 @import '../../theme/basic.scss';
 $flipCardSize:160px;
 $flipCardImageSize: 90px;
 .knowledge{
-    padding: 50px;
     @include centeredFullPage(white);
-    position:relative;
-    > div:first-child{
-        @include sectionSubTitle;
-        color: 	black;
+    .sectionTitle{
+        color: $darkContrast;
     }
-    > div:nth-child(2){
-        @include sectionTitle;
 
-    }
     .raw {
         padding-left: 10%;
         width: 760px;

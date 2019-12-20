@@ -12,6 +12,8 @@ import paraImg from "./images/laptopC.png";
 import codeImg from "./images/code.jpeg";
 import paraImg3 from "./images/phone.jpeg";
 import  ComponentContainer from './components/ComponentContainer/ComponentContainer';
+import SlideShowContainer from "./components/SlideShowContainer/SlideShowContainer";
+import ShowContainer from "./components/ShowContainer/ShowContainer";
 const sections = txt.navigationSections;
 const paralexStyle = {
   backgroundImage: `url(${paraImg})`,
@@ -28,21 +30,33 @@ const paralexStyle3 = {
   minHeight: "10vh",
   height: "200px !important"
 };
+          const paralexStyle4= {
+            backgroundImage: `url(${codeImg})`,
+            minHeight: "20vh",
+            height: "200px !important",
+            backdropFilter: "hue-rotate(120deg)"
+          };
+          let _slides = [{
+            imageUrl: "https://i.ytimg.com/vi/MxwjEacvrtY/hqdefault.jpg",
+            caption: "Allan Allan Al Al Allan"
+          }, {
+            imageUrl: "https://pbs.twimg.com/profile_images/2576554888/s8vftzr3j0a9r703xdfn.jpeg",
+            caption: "Steve Steve Steve"
+          }];
 class App extends Component {
   render() {
-    console.log(paraImg);
     return (
       <div className="app">
         <Navigation {...txt} sections={sections} />
         <div className="paralex" style={paralexStyle}>
-          <header className="app-header" id="app-header">
+          <header className="app-header" id="landingPage">
             <Header text={txt} />
           </header>
         </div>
-        {/* <div>
-            <h1>Life long learning</h1>
-        </div> */}
+    
           <ThatsMe ID={txt.navigationSections[0] }{...txt} />
+          <div className="paralex" style={paralexStyle4}></div>
+          <SlideShowContainer slides={_slides}/>
           <div className="paralex" style={paralexStyle2}></div>
         <ComponentContainer {...txt} ID={txt.navigationSections[1]}/>
         
@@ -52,6 +66,8 @@ class App extends Component {
 
         
         <Knowledge {...txt} ID={txt.navigationSections[3]} />
+        <div className="paralex" style={paralexStyle4}></div>
+          <ShowContainer {...txt.Contact}/>
         <Footer {...txt} />
         <div id="backTopBtn" className="btn">
           <i className="fas fa-chevron-up"></i>
