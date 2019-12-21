@@ -1,109 +1,116 @@
 @import '../../theme/basic.scss';
-.SlideShowContainer{
-   
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+
+.SlideShowContainer {
+  @include centeredFullPage($baseContrastColor);
+  h2 {
+    @include sectionTitle;
+    color: #333;
+ }
+  .slideShowBox {
+    width: 100%;
+    @include centerItemsDir(column, center);
+
+    .slideShowSlides {
+      // background-color: $baseColorTran1;
+      // text-align: center;
+      // width: $projectSizeMobile;
+      // margin-bottom:$genMargin;
+      // @include centerItemsDir(column, center, none);
+      >div {
+        background-color: inherit;
+        text-align: center;
+        width: $projectSizeMobile;
+        height: fit-content;
+        display: none;
+        &.active {
+          display: block;
+        }
+        .slideImage{
+          position: relative;
+          width: inherit;
+          height: $projectSizeMobile;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        img {
+          height: 100%;          
+        }
+        .btnSlide{
+          top: 45%;
+          padding: calc(#{$genMargin}*1);
+          position:absolute;
+          border: none;
+          background-color: rgba(31,43,108,.2);
+          &:hover, &:active, &:focus{
+            background-color: rgba(31,43,108,.5);
+            color: $baseContrastColor;
+
+          }
+        }
+        .slideLeftArrowContainer{
+          padding-left: 10px !important;
+          left:0;
+        }
+        .slideRightArrowContainer{
+          padding-right: 10px !important;
+          right:0;
+        }
+        
+        .slideInformation{
+          background-color: inherit;
+          .slideShowDots{
+            background-color: inherit;
+            padding-top: calc(#{$genMargin}/2);
+            color: $darkContrast;
+            text-align: center;
+            font-size: .8em;
+            li{
+              cursor: pointer;
+              
+              display: inline;
+              font-family:serif !important;
+              &:hover{
+                color: $lightGray;
+              }
+            }
+          }
+          .projectTitle{
+            background-color: inherit;
+            margin: $genMargin;
+          }
+          .showDetailsBtn{
+            // background-color: inherit;
+            i{
+              padding-right: 1em;
+            }
+          }
+          
+        }
+        @include lg{
+            width: $projectSize;
+        }
+        @include xl{
+          width: calc(#{$projectSize}*(4/3));
+      }
+      }
+      
+    }
+    
   }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-  
 }
-body{
-    background-color: #F9F9FA
+
+.btn{
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: $genPadding;
+  border: 1px solid $baseColor;
+  width: fit-content;
+  margin: 0 auto;
+  color: $baseContrastColor;
+  background-color: $baseColor;
+  &:hover, &:active, &:focus{
+    color: $baseColor;
+    background-color: $baseContrastColor;
   }
-  .slideshow {
-    width: 480px;
-    height: 360px;
-    background: #000;
-    position: relative;
-  }
-  .slideshow-slides {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .slideshow-slides li {
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    margin: 0;
-    padding: 0;
-    transition: .2s;
-    opacity: 0;
-  }
-  .slideshow-slides li.active {
-    opacity: 1;
-  }
-  figure {
-    margin: 0;
-    padding: 0;
-  }
-  figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  .slideshow-dots {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    list-style: none;
-  }
-  .slideshow-dots li {
-    display: inline;
-    margin: 0;
-    padding: 0;
-  }
-  .slideshow-dots a {
-    cursor: pointer;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background: #fff;
-    border-radius: 10px;
-    text-indent: -9990px;
-    opacity: .5;
-    transition: .3s;
-  }
-  .slideshow-dots li.active a {
-    opacity: 1;
-  }
+}

@@ -2,6 +2,9 @@ $genPadding: 10px;
 $padCenterPageMobil: 80px;
 $padCenterPage: 200px;
 
+$projectSize: 500px;
+$projectSizeMobile: calc(#{$projectSize}*(3/4));
+
 $genMargin: 15px;
 $bordRad: 0px;
 

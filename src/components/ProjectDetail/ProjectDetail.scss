@@ -1,0 +1,25 @@
+@import '../../theme/basic.scss';
+$detailsLineHeight: 1.5em;
+.ProjectDetail{
+    margin: 0 auto;
+    margin-top: $genMargin;
+    background-color: $baseColorTran1;
+    padding: calc(#{$genPadding} *4);
+    font-size: .9em;
+    display: grid;
+    grid-column-gap: $genMargin;
+    grid-template-columns: 30% 70%;
+    text-align: left;
+
+    p{
+        font-size: .9em;
+        line-height: $detailsLineHeight;
+    }
+    .label{
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+   
+    }
+    

@@ -7,13 +7,13 @@ const Footer = (props) => {
                 <div className="copyRight"><span>2019 </span><span>&copy;</span><span> Denis Schüle</span></div>
                 <div className="contactBar">
                     <div className="contactIcon">
-                        <a href={linkedInLink} target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                        <a href={linkedInLink} target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
                     </div>
                     <div className="contactIcon">
-                        <a href={"mailto:"+contactMailAddress+'?subject=' +contactMailSubject}><i className="far fa-paper-plane"></i></a>
+                        <a href={"mailto:"+contactMailAddress+'?subject=' +contactMailSubject} rel="noopener noreferrer"><i className="far fa-paper-plane"></i></a>
                     </div>
                     <div className="contactIcon">
-                        <a href={githubLink} target="_blank"><i className="fab fa-github"></i></a>
+                        <a href={githubLink} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                     </div>
                 </div>
         </div>

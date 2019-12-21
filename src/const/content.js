@@ -7,6 +7,8 @@ import campus02Img from '../images/firmenLogos/campus02.png';
 import codefactoryLogo from '../images/firmenLogos/codefactoryLogo.jpg';
 import codefactoryImg from '../images/firmenLogos/codefactory.png';
 import faberLogo from '../images/faberLogo.png'
+import denisPortfolio from '../images/denisPortfolio.jpg';
+import schueleskocherei from '../images/schuelesKochereiScreenshot.jpg';
 const txt ={
     navigationSections: ['That\'s me','Project','Career path','Future','Technologies','Contact me'],
     logoTitle: "Faber Design",
@@ -19,15 +21,56 @@ const txt ={
     githubLink: "https://github.com/FaberDS",
     contactMailAddress: "denis.schuele@edu.campus02.at",
     contactMailSubject: "Website contact!",
+    btnTxt:{
+        showMore: "Show more",
+        showLess: "Show less"
+    },
+    icons:{
+        roundPlus: "fas fa-plus-circle",
+        roundMinus: "fas fa-minus-circle",
+    },
    thatsMe:{
        vision: "Finding and loving a job, enriches the whole life",
-       intro: "Computer science is more than a job for me. Computer science offers the possibility to change the world from an office. Computer science gives us the opportunity to help millions of people.",
+       intro: "Computer science is more than a job for me. Computer science offers the possibility to change the world from an office. Computer science gives us the opportunity to help millions of people",
        main: "With computer science I want to make my contribution to the overall welfare of mankind. To achieve this I will have to overcome many hurdles, but I know that with a solid education and growing professional experience nothing stands in the way of this goal. With every working day, with every experience I get a little bit closer to this goal.",
        poente: "My enthusiasm for new technologies and digital change is exceeded only by my ambition."
    },
    showCase:{
     sectionTitle: 'Project',
-    sectionSubTitle: ''
+    sectionSubTitle: '',
+    projectDetailsInfoLabels: [
+        'Purpose',
+        'Created in',
+        'Link',
+        'Technologies'
+    ],
+    projects:[
+        {
+            details: {
+                title: "Schüles Kocherei",
+
+              usedTechnologies: ["HTML5", "CSS", "JS"],
+              purpose: "BSD-2 'Human Interaction' pratical exercise",
+              createdIn: "04/2019",
+              link: "https://faberds.github.io/schueleskocherei/"
+        
+            },
+            imageUrl: schueleskocherei,
+            caption: "Schüles Kocherei"
+          },
+          {
+            details: {
+                title: "Denis Portfolio",
+              usedTechnologies: ["HTML5", "CSS", "JS", "React","Font Awesome"],
+              purpose: "BSD-3 'Business English' portfolio",
+              createdIn: "12/2019",
+              link: "https://faberds.github.io/Portfolio/"
+            },
+            imageUrl:
+              denisPortfolio,
+            caption: "Denis Portfolio"
+          }
+    ]
    },
     history:{
         sectionTitle: "Career path",

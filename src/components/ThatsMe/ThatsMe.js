@@ -10,7 +10,7 @@ class ThatsMe extends Component {
 
   render() {
     const { ID, history,logo,thatsMe,navigationSections} = this.props;
-    const introLines = thatsMe.intro.split('.').map(i => <p>{i}.</p>);
+    const introLines = thatsMe.intro.split('.').map((i,j=0) => <p key={j++}>{i}.</p>);
     return (
     
       <div className="thatsMe" id={ID}>
@@ -28,9 +28,9 @@ class ThatsMe extends Component {
 
           <div className="Column-2-3 column">
             <div className="content">
-              <p className="intro">
+              <div className="intro">
                 {introLines}
-              </p>
+              </div>
               <p className="main">
                 {thatsMe.main}
               </p>

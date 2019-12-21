@@ -10,20 +10,13 @@ class CompanyDetails extends Component {
       } 
       
     hoverOn = (event)=>{
-        console.log("hovered");
         this.setState((prev)=> ({displayText: !prev.displayText}))
-        console.log(this.state);
     }
     hoverOff = (event)=>{
-        console.log("hovered out");
         this.setState((prev)=> ({displayText: !prev.displayText}))
-        console.log(this.state);
     }
   render() {
     const { logo, linkTo, title, subtext, fromDate, toDate, isWork, thematicArea, Img,position,historyDetails} = this.props;
-    console.log("Test")
-    console.log(position)
-    console.log(historyDetails)
     return (
       <div className="companyDetails" onMouseEnter={this.hoverOn} onMouseLeave={this.hoverOff}>
         <a href={linkTo}>
@@ -38,7 +31,7 @@ class CompanyDetails extends Component {
             <div className="detailsTextHeadline">
               <a href={linkTo}><h3 className=" detailTitle">{title}</h3></a>
               <span className="timePeriode">
-                <i class="fas fa-calendar-alt"></i>
+                <i className="fas fa-calendar-alt"></i>
                 <span className="">{fromDate}</span>
                 <span className="text-seperator">-</span>
                 <span className="">{toDate}</span>

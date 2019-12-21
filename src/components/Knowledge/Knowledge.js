@@ -22,7 +22,7 @@ class Knowledge extends Component {
                 <div className="raw">
                     {pngs.map((png,i) =>{
                         return(
-                            <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div className="flip-container" key={i} onTouchStart="this.classList.toggle('hover');">
                                 <div className="flipper">
                                 <div className="front">
                                     <img src={png.src} alt={png.title + ' Image'}/>

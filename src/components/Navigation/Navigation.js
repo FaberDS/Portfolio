@@ -11,7 +11,7 @@ class Navigation extends Component{
   render(){
     const {sections, contactMailAddress,logoTitle ,contactMailSubject} = this.props;
  
-    const navLinks = sections.map((section, i) => <a onClick={this.closeMobileNavbar} href={'#'+section}>{section}</a>)
+    const navLinks = sections.map((section, i=0) => <a onClick={this.closeMobileNavbar} kex={i++} href={'#'+section}>{section}</a>)
     return (
       <nav id="topNavBar">
         <h2 className="logoTitle"><a href="#landingPage">{logoTitle}</a></h2>
