@@ -40,17 +40,12 @@ class CompanyDetails extends Component {
             </div>
            
               <div className=" detailSubtextContainer">
-                <p>
-                  <span className="detailSubject">{ isWork ?  historyDetails.position : historyDetails.title}:</span>
-                  <span>{position}</span>
-                </p>
-                <p>
-                  <span className="detailSubject">{ historyDetails.thematicArea}:</span>
-                  <span>{thematicArea}</span>
-                </p>
-                
-                <p className=" detailSubtext">{subtext}</p>
+                  <p className="detailLabel">{ isWork ?  historyDetails.position : historyDetails.title}:</p>
+                  <p>{position}</p>
+                  <p className="detailLabel">{ historyDetails.thematicArea}:</p>
+                  <p>{thematicArea}</p>
               </div>
+              <p className=" detailSubtext">{subtext}</p>
           </div>
         </div>
       </div>

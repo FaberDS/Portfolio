@@ -39,7 +39,7 @@ $headings : h1 h2 h3 h4 h5 h6;
     align-items: $align;
     flex-direction: $direction;
 }
-@mixin centeredFullPage($bcolor) {
+@mixin centeredFullPage($bcolor:$baseContrastColor) {
     position:relative;
     font-size: $genFontSize;
     width: 90%;
@@ -101,6 +101,11 @@ $headings : h1 h2 h3 h4 h5 h6;
         color: $secColor;
         background-color: $mainColor;
     }
+}
+
+.detailLabel{
+    font-size: 1em;
+    font-weight: 500;
 }
 @mixin BluePaper(){
     background: #58a;

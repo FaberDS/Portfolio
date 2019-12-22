@@ -57,7 +57,10 @@
           }
 
           &:hover {
-            transform: scale(1.2);
+            transform: scale($scaleFactor);
+          }
+          &:hover ~ .slideInformation .projectTitle{
+            margin-top: calc(#{$genMargin}*3) !important;
           }
           &::before:hover {
             display: block;
@@ -141,6 +144,7 @@
           .projectTitle {
             background-color: inherit;
             margin: $genMargin;
+            transition: all $scaleTime;
           }
 
           .showDetailsBtn {

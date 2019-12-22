@@ -101,7 +101,7 @@ const txt ={
             Img: dccsImg,
             title: "dccs",
             isWork: true,
-            thematicArea: "Micrsoft Online 365",
+            thematicArea: "Microsoft Online 365",
             position: "Junior Software Developer",
             subtext: "My main area of responsibility is the development / enhancement of SharePoint platforms for customers.",
             fromDate: "15.07.2019",

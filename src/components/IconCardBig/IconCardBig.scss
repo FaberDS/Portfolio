@@ -1,0 +1,53 @@
+@import '../../theme/basic.scss';
+
+.IconCardBig{
+    width: $CardWidthMobil;
+    margin: $genMargin;
+    border: 2px solid $darkContrast;
+
+    @include centerItemsDir(column,center,none);
+    .cardIcon{
+        color: $baseContrastColor;
+        background-color: $darkContrast;
+        font-size: 3em;
+        i{
+            display: table-cell;
+            vertical-align: middle; 
+            text-align: center;
+        }
+       
+    }
+    &:hover .cardIcon{
+        color: $darkContrast;
+        background-color: $baseContrastColor;
+    }
+    &:hover .cardContent{
+        color: $baseContrastColor;
+        background-color: $darkContrast;
+    }
+    .cardContent{
+        text-align: center;
+        font-size: 1em;
+        padding: $genPadding;
+        p{
+            font-size: 1.2em;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        span{
+            text-align: center;
+            font-size: .8em;
+        }
+    }
+    @include lg{
+        width: 50%;
+        font-size: 1.2em;
+        .cardIcon{
+            i{
+                width: $logoImgWidth;
+                height: $logoImgWidth;
+            }
+        }
+    }
+    
+}

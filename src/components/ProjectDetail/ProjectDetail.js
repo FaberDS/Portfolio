@@ -11,13 +11,13 @@ const detailsSubList = details.usedTechnologies.map((tec,i)=>{
     return (
         <div className="ProjectDetail">
 
-            <div className="label">{labels[0]}</div>
+            <div className="detailLabel">{labels[0]}</div>
             <div className="detail">{details.purpose}</div>
-            <div className="label">{labels[1]}</div>
+            <div className="detailLabel">{labels[1]}</div>
             <div className="detail">{details.createdIn}</div>
-            <div className="label">{labels[2]}</div>
+            <div className="detailLabel">{labels[2]}</div>
             <div className="detail"><a href={details.link}>{details.title}</a></div>
-            <div className="label">{labels[3]}</div>
+            <div className="detailLabel">{labels[3]}</div>
             <div className="detailsSubList">{detailsSubList}</div>
         </div>
     )

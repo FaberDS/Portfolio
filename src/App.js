@@ -16,6 +16,7 @@ import SlideShowContainer from "./components/SlideShowContainer/SlideShowContain
 import ShowContainer from "./components/ShowContainer/ShowContainer";
 import IconCard from "./components/IconCard/IconCard";
 import { isCompositeComponent } from "react-dom/test-utils";
+import ContactSection from "./components/ContactSection/ContactSection";
 const sections = txt.navigationSections;
 const paralexStyle = {
   backgroundImage: `url(${paraImg})`,
@@ -63,7 +64,7 @@ class App extends Component {
 
         <Knowledge {...txt} ID={txt.navigationSections[3]} />
         <div className="paralex" style={paralexStyle4}></div>
-        <ShowContainer {...txt.Contact} />
+        <ContactSection {...txt.Contact} />
         <Footer {...txt} />
         <IconCard link="" icon={icons.upArrow} id="backTopBtn"/>
         

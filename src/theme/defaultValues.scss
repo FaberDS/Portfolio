@@ -9,7 +9,7 @@ $genMargin: 15px;
 $genMarginHalf : calc(#{$genMargin}/2);
 $bordRad: 0px;
 
-
+$scaleFactor: 1.3;
 $genFontSizeMobil: 14px;
 $genFontSize: 18px;
 $genSectionTitleSizeMobile: 20px;
@@ -20,8 +20,11 @@ $logoImgWidth: 200px;
 $logoImgWidthMobil: calc(#{$logoImgWidth}*(3/4));
 $iconHeight: 120px;
 $widthMiniPng: 30px;
+$CardWidth: 300px;
+$CardWidthMobil: calc(#{$CardWidth} *(3/4));
 
 $mainFont: 'Cantarell', sans-serif;
 $subFont: 'Patrick Hand', cursive;
 
 $scaleTime: .2s;
+$detailsLineHeight: 1.5em;

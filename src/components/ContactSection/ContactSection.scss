@@ -1,0 +1,12 @@
+@import '../../theme/basic.scss';
+
+.ContactSection{
+    @include centeredFullPage;
+    h2{
+        @include sectionTitle;
+        color: $darkContrast;
+    }
+    .contactCardsContainer{
+        @include centerItemsDir(row, space-evenly,none);
+    }
+}

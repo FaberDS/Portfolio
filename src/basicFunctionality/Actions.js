@@ -30,6 +30,10 @@ const base = {
         document.documentElement.offsetHeight,
         document.documentElement.clientHeight
       );
+    },
+    setUpMailUrl: function(link, subject){
+      return `mailto:${link}?subject=${subject}`
+
     }
     
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import './Footer.scss';
 import IconCard from '../IconCard/IconCard';
+import base from '../../basicFunctionality/Actions';
 const Footer = (props) => {
     const {Contact} = props;
     const contactCards = Contact.content.map((contact, i)=>{
         if(contact.mailDetails !== null){
-            contact.link = `mailto:${contact.link}?subject=${contact.mailDetails.subject}`
+            contact.link = base.setUpMailUrl(contact.link,contact.mailDetails.subject);
         }            
 
         return(

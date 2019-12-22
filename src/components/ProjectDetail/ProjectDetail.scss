@@ -1,5 +1,5 @@
 @import '../../theme/basic.scss';
-$detailsLineHeight: 1.5em;
+
 .ProjectDetail{
     margin: 0 auto;
     margin-top: $genMargin;
@@ -12,7 +12,6 @@ $detailsLineHeight: 1.5em;
     text-align: left;
 
     >div{
-        font-size: .9em;
         line-height: $detailsLineHeight;
         img{
             width: $widthMiniPng;
@@ -24,10 +23,7 @@ $detailsLineHeight: 1.5em;
             }
         }
     }
-    .label{
-        font-size: 1em;
-        font-weight: 500;
-    }
+    
     .detail a{
         text-decoration: underline;
         &:hover{
