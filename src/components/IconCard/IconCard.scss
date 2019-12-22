@@ -1,0 +1,5 @@
+@import '../../theme/basic.scss';
+ .IconCard{
+    display: inline;
+    @include iconHover(white,black);
+ }

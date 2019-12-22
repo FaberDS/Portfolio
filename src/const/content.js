@@ -20,6 +20,14 @@ const filterObject = (title,array = pngs) =>{
                 : null
 
 }
+export const icons ={
+    roundPlus: "fas fa-plus-circle",
+    roundMinus: "fas fa-minus-circle",
+    plain: "far fa-paper-plane",
+    linkedIn: "fab fa-linkedin-in",
+    github: "fab fa-github",
+    upArrow: "fas fa-chevron-up"
+}
 const txt ={
     navigationSections: ['That\'s me','Project','Career path','Future','Technologies','Contact me'],
     logoTitle: "Faber Design",
@@ -29,17 +37,14 @@ const txt ={
     imageAlt: "-Image",
     heroBtn:"See more",
     heroBtnLink:"Portfolio",
-    linkedInLink: "https://at.linkedin.com/in/denis-sch%C3%BCle-b54a95164",
-    githubLink: "https://github.com/FaberDS",
-    contactMailAddress: "denis.schuele@edu.campus02.at",
-    contactMailSubject: "Website contact!",
+   
     btnTxt:{
         showMore: "Show more",
         showLess: "Show less"
     },
     icons:{
-        roundPlus: "fas fa-plus-circle",
-        roundMinus: "fas fa-minus-circle",
+        roundPlus: icons.roundPlus,
+        roundMinus: icons.roundMinus
     },
    thatsMe:{
        vision: "Finding and loving a job, enriches the whole life",
@@ -136,7 +141,31 @@ const txt ={
         sectionSubTitle: 'I worked with'
     },
     Contact:{
-        sectionTitle: 'Contact me'
+        sectionTitle: 'Contact me',
+        content:[
+            {
+                title: "LinkedIn",
+                icon: icons.linkedIn,
+                mailDetails: null,
+                link: "https://at.linkedin.com/in/denis-sch%C3%BCle-b54a95164",
+            },
+            {
+                title: "Github",
+                icon: icons.github,
+                mailDetails: null,
+                link: "https://github.com/FaberDS",
+            },
+            {
+                title: "E-Mail",
+                icon: icons.plain,
+                mailDetails: {
+                    subject: "Website contact!",
+
+                },
+                link: "mailto:denis.schuele@edu.campus02.at",
+            }
+           
+        ]
     },
     ServiceSectionContent: {
         sectionTitle : "Future",

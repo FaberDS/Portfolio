@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
 import Header from "./components/Header/Header";
 import Knowledge from "./components/Knowledge/Knowledge";
-import txt from "./const/content";
+import txt,{icons} from "./const/content";
 import base from "./basicFunctionality/Actions";
 import ThatsMe from "./components/ThatsMe/ThatsMe";
 import paraImg from "./images/laptopC.png";
@@ -14,6 +14,8 @@ import paraImg3 from "./images/phone.jpeg";
 import ComponentContainer from "./components/ComponentContainer/ComponentContainer";
 import SlideShowContainer from "./components/SlideShowContainer/SlideShowContainer";
 import ShowContainer from "./components/ShowContainer/ShowContainer";
+import IconCard from "./components/IconCard/IconCard";
+import { isCompositeComponent } from "react-dom/test-utils";
 const sections = txt.navigationSections;
 const paralexStyle = {
   backgroundImage: `url(${paraImg})`,
@@ -63,9 +65,8 @@ class App extends Component {
         <div className="paralex" style={paralexStyle4}></div>
         <ShowContainer {...txt.Contact} />
         <Footer {...txt} />
-        <div id="backTopBtn" className="btn">
-          <i className="fas fa-chevron-up"></i>
-        </div>
+        <IconCard link="" icon={icons.upArrow} id="backTopBtn"/>
+        
       </div>
     );
   }
