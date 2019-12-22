@@ -1,11 +1,12 @@
 $genPadding: 10px;
 $padCenterPageMobil: 80px;
-$padCenterPage: 200px;
+$padCenterPage: 150px;
 
 $projectSize: 500px;
 $projectSizeMobile: calc(#{$projectSize}*(3/4));
 
 $genMargin: 15px;
+$genMarginHalf : calc(#{$genMargin}/2);
 $bordRad: 0px;
 
 
@@ -18,7 +19,9 @@ $navBarHeight: 50px;
 $logoImgWidth: 200px;
 $logoImgWidthMobil: calc(#{$logoImgWidth}*(3/4));
 $iconHeight: 120px;
-
+$widthMiniPng: 30px;
 
 $mainFont: 'Cantarell', sans-serif;
 $subFont: 'Patrick Hand', cursive;
+
+$scaleTime: .2s;

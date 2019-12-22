@@ -11,9 +11,18 @@ $detailsLineHeight: 1.5em;
     grid-template-columns: 30% 70%;
     text-align: left;
 
-    p{
+    >div{
         font-size: .9em;
         line-height: $detailsLineHeight;
+        img{
+            width: $widthMiniPng;
+            margin: $genMarginHalf;
+            transition: all 1s;
+            z-index:20;
+            &:hover {
+                width: calc(#{$widthMiniPng}*2);
+            }
+        }
     }
     .label{
         font-size: 1em;

@@ -18,7 +18,12 @@ class SlideShowContainer extends React.Component {
     this.txt= props.txt;
   }
   jumpToSlide = event=>{
-    this.setState({ activeIndex: event.target.id });
+
+    const targetId = event.currentTarget.dataset.targetslideid;
+    if(typeof targetId !== 'undefined'){
+      this.setState({ activeIndex: targetId });
+    }
+    
     
   };
   showDetails = (event)=>{
@@ -34,26 +39,37 @@ class SlideShowContainer extends React.Component {
         className={isActive? "active" : ""}
         key={index}
       >
-        <span onClick={this.jumpToSlide} id={index}>{isActive ? "\u25C9": "\u25CE"} </span>
+        <span onClick={this.jumpToSlide} data-targetSlideId={index} >{isActive ? "\u25C9": "\u25CE"} </span>
       </li>
     )},this);
     const slides = this.props.projects.map((project, index) => {
       const isActive = index== this.state.activeIndex;
-      
+      const prevIndex = index == 0 
+        ? (this.props.projects.length -1)
+        : (index-1); 
+      const nextIndex = index == this.props.projects.length -1
+        ? 0
+        : index+1;
       return (
         <div
           className={isActive ? "active " : ""}
           key={index}
           index={index}
         >
-          <div className="slideImage" style={{backgroundImage: 'url('+project.imageUrl+')'}}>
-          <div className="btnSlide slideLeftArrowContainer">
-            <i class="fas fa-angle-left"></i>
-          </div>
-          <div className="btnSlide slideRightArrowContainer">
-            <i class="fas fa-angle-right"></i>
-          </div>
-          </div>
+          <div className="slideImage" >
+            <div className="slideHero"style={{backgroundImage: 'url('+project.imageUrl+')'}}>
+
+              <div className="projectTitleInside">
+                  <a href={project.details.link}>{project.caption}</a>
+              </div>
+              <div className="btnSlide slideLeftArrowContainer" onClick={this.jumpToSlide} data-targetSlideId={prevIndex}>
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <div className="btnSlide slideRightArrowContainer" onClick={this.jumpToSlide}  data-targetSlideId={nextIndex}>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+        </div>
           <div className="slideInformation">
             <div className="slideShowDots">
               {dots}

@@ -29,12 +29,14 @@ $marginDetails: 30px;
     transition: all $transistionDurationTextDisapear ease-out;
 }
 .companyDetails{
-    height: 200px;
+    height: fit-content;
+    min-height: 200px;
     width: 100%;
     z-index: 99;
     // background-color: green;
     // border: 1px solid black;
-   
+    // margin-top: calc(#{$genMargin}*2);
+
     position: relative;
     
    
@@ -52,6 +54,7 @@ $marginDetails: 30px;
             left: 0px;
             position:relative;
             flex-direction: column;
+
         }
     
         @include lg{
@@ -87,6 +90,8 @@ $marginDetails: 30px;
             // left: $widthImg + 220px;
            
         }
+        margin-top: calc(#{$genMargin}*(1/2));
+
         }
     
     @include md{

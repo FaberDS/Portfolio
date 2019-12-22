@@ -9,12 +9,24 @@ import codefactoryImg from '../images/firmenLogos/codefactory.png';
 import faberLogo from '../images/faberLogo.png'
 import denisPortfolio from '../images/denisPortfolio.jpg';
 import schueleskocherei from '../images/schuelesKochereiScreenshot.jpg';
+import pngs from './pngs';
+
+const filterObject = (title,array = pngs) =>{
+    const searchedElement= array.filter((element) => {
+        return element.title == title;
+    })
+    return searchedElement.length > 0 
+                ? searchedElement[0]
+                : null
+
+}
 const txt ={
     navigationSections: ['That\'s me','Project','Career path','Future','Technologies','Contact me'],
     logoTitle: "Faber Design",
     logo: faberLogo,
     headerTitle : "Denis",
     subTitle: "another portfolio",
+    imageAlt: "-Image",
     heroBtn:"See more",
     heroBtnLink:"Portfolio",
     linkedInLink: "https://at.linkedin.com/in/denis-sch%C3%BCle-b54a95164",
@@ -49,7 +61,7 @@ const txt ={
             details: {
                 title: "Schüles Kocherei",
 
-              usedTechnologies: ["HTML5", "CSS", "JS"],
+              usedTechnologies: [filterObject('HTML'),filterObject('CSS'), filterObject('JS')],
               purpose: "BSD-2 'Human Interaction' pratical exercise",
               createdIn: "04/2019",
               link: "https://faberds.github.io/schueleskocherei/"
@@ -61,7 +73,7 @@ const txt ={
           {
             details: {
                 title: "Denis Portfolio",
-              usedTechnologies: ["HTML5", "CSS", "JS", "React","Font Awesome"],
+              usedTechnologies: [filterObject('HTML'),filterObject('CSS'),filterObject('JS'),filterObject('React')],
               purpose: "BSD-3 'Business English' portfolio",
               createdIn: "12/2019",
               link: "https://faberds.github.io/Portfolio/"

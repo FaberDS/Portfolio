@@ -39,6 +39,7 @@ const paralexStyle4 = {
 
 class App extends Component {
   render() {
+    console.log(txt);
     return (
       <div className="app">
         <Navigation {...txt} sections={sections} />
