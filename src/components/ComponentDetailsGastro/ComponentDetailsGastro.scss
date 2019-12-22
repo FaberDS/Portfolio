@@ -1,0 +1,19 @@
+@import '../../theme/basic.scss';
+
+.hotelRating{
+    i{
+        color:$gold;
+    }
+}
+.restaurantRating{
+    img{
+        width: $macaronSize;
+        margin-right: 5px;
+    }
+}
+.companyImgContainer{
+    img{
+        width:$companyImgSize!important;
+        height: $companyImgSize;
+    }
+}

@@ -19,6 +19,8 @@ import powerapps from '../images/pngs/powerapps.png';
 import bootstrap from '../images/pngs/bootstrap.png';
 import powershell from '../images/pngs/powershell.png';
 import azure from '../images/pngs/azure.png';
+import macaron from '../images/pngs/macaron.png';
+export let michelinMacaron= macaron;
 const pngs =[{
                 src: html,
                 title: 'HTML',

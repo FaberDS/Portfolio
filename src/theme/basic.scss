@@ -76,7 +76,9 @@ $headings : h1 h2 h3 h4 h5 h6;
 }
 @mixin sectionSubTitle(){
     margin: 0;
+    margin-bottom: $genMargin;
     padding: $genPadding;
+
     font-size: calc(#{$genSectionTitleSize} *(2/3));
     font-weight: 700;
     text-transform: uppercase;
@@ -114,3 +116,15 @@ $headings : h1 h2 h3 h4 h5 h6;
     
 }
 
+@mixin  transSlow {
+    -webkit-transition: all $transitionDurationText ease-in;
+    -moz-transition: all $transitionDurationText ease-in;
+    -o-transition: all $transitionDurationText ease-in;
+    transition: all $transitionDurationText ease-in;
+}
+@mixin transFast{
+    -webkit-transition: all $transistionDurationTextDisapear ease-out;
+    -moz-transition: all $transistionDurationTextDisapear ease-out;
+    -o-transition: all $transistionDurationTextDisapear ease-out;
+    transition: all $transistionDurationTextDisapear ease-out;
+}
