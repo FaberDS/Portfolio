@@ -30,7 +30,8 @@ export const icons ={
 }
 const txt ={
     navigationSections: ['That\'s me','Project','Career path','Future','Technologies','Contact me'],
-    logoTitle: "Faber Design",
+    logoTitle: "DD",
+    logoTitleLong: "Denis Design",
     logo: faberLogo,
     headerTitle : "Denis",
     subTitle: "another portfolio",
@@ -78,7 +79,7 @@ const txt ={
           {
             details: {
                 title: "Denis Portfolio",
-              usedTechnologies: [filterObject('HTML'),filterObject('CSS'),filterObject('JS'),filterObject('React')],
+              usedTechnologies: [filterObject('HTML'),filterObject('CSS'),filterObject('JS'),filterObject('React'),filterObject('node'),filterObject('SASS')],
               purpose: "BSD-3 'Business English' portfolio",
               createdIn: "12/2019",
               link: "https://faberds.github.io/Portfolio/"

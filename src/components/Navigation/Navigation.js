@@ -9,12 +9,16 @@ class Navigation extends Component{
     document.getElementById('nav-check').checked=false;
   }
   render(){
-    const {sections, contactMailAddress,logoTitle ,contactMailSubject} = this.props;
+    const {sections, contactMailAddress,logoTitle,logoTitleLong ,contactMailSubject} = this.props;
  
     const navLinks = sections.map((section, i=0) => <a onClick={this.closeMobileNavbar} kex={i++} href={'#'+section}>{section}</a>)
     return (
       <nav id="topNavBar">
-        <h2 className="logoTitle"><a href="#landingPage">{logoTitle}</a></h2>
+        <div className="logoContainer">
+          <h2 className="logoTitle"><a href="#landingPage">{logoTitle}</a></h2>
+          <h2 className="logoTitleLong"><a href="#landingPage">{logoTitleLong}</a></h2>
+          
+        </div>
         <input type="checkbox" id="nav-check"/>
 
         <div className="nav-btn">

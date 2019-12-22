@@ -6,17 +6,46 @@ nav {
     top: 0;
     height: $navBarHeight;
     width: 100%;
-    z-index: 1000;
+    z-index: 999;
     background-color: transparent;
     color: $baseContrastColor;
     transition: background-color 1s ease 0s;
     padding-left: 10px;
     color: $baseContrastColor;
-    .logoTitle{
+    .logoContainer{
         display: inline-block;
-        padding: $genPadding;
-        font-size: 2em;
+        width: 30%;
+        position: relative;
+        h2{
+            position: absolute;
+            top: -5px;
+            left: 5px;
+            display: inline-block;
+            font-size: 2em;
+            transition: all $scaleTime;
+            z-index: 9999999;
+           
+        }
+        // .logoTitle{
+        //     display: none;
+        // }
+        .logoTitleLong{
+            display: none;
+        }
+        &:hover, &:focus{
+            color: $darkContrast !important;
+        }
+        &:hover .logoTitleLong, &:focus .logoTitleLong{
+            display: inline;
+    
+        }
+        &:hover .logoTitle, &:focus .logoTitle{
+            display: none;
+    
+        }
+        
     }
+   
     #nav-check {
         display: none;
     }
