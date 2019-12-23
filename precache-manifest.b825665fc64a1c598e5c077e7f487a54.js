@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8f0fefdb85b28e26664ce11c2f1c86ae",
+    "revision": "bbd1efc3aca698454e2a372db0ffa644",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "f302d3d29db5d306254b",
-    "url": "/Portfolio/static/css/main.cc933814.chunk.css"
+    "revision": "102e3312cf3d3137c688",
+    "url": "/Portfolio/static/css/main.380a3f8c.chunk.css"
   },
   {
-    "revision": "6279171b48cc4c86dc0b",
-    "url": "/Portfolio/static/js/2.0d0f5e5b.chunk.js"
+    "revision": "a4d704e81384a7202ae4",
+    "url": "/Portfolio/static/js/2.8bef5d57.chunk.js"
   },
   {
-    "revision": "46849cf317c9e39500476880dd60fba1",
-    "url": "/Portfolio/static/js/2.0d0f5e5b.chunk.js.LICENSE"
+    "revision": "e1cc8c46a72ae73ac18f88913bf71afe",
+    "url": "/Portfolio/static/js/2.8bef5d57.chunk.js.LICENSE"
   },
   {
-    "revision": "f302d3d29db5d306254b",
-    "url": "/Portfolio/static/js/main.be43f972.chunk.js"
+    "revision": "102e3312cf3d3137c688",
+    "url": "/Portfolio/static/js/main.3edc9e08.chunk.js"
   },
   {
     "revision": "93d806d1a046e00ac01d",
@@ -64,12 +64,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/dccsLogo.9fd0a888.jpg"
   },
   {
+    "revision": "c3c2223d3b4ff9f565b66e548f6f7b05",
+    "url": "/Portfolio/static/media/denisLogo.c3c2223d.png"
+  },
+  {
     "revision": "51146ac226bd69062df5852c8c5a4090",
     "url": "/Portfolio/static/media/denisPortfolio.51146ac2.jpg"
   },
   {
-    "revision": "c8b3ff2350d283f6ecd16ec159366190",
-    "url": "/Portfolio/static/media/faberLogo.c8b3ff23.png"
+    "revision": "b885d427ec34051c3addf55cecac5ebd",
+    "url": "/Portfolio/static/media/edenRocImg.b885d427.jpg"
+  },
+  {
+    "revision": "d64f7fb8924dd9600803cf7a45a6ca9a",
+    "url": "/Portfolio/static/media/edenRocLogo.d64f7fb8.jpg"
   },
   {
     "revision": "9aec64054733a787ab5e9b04b8366e16",
@@ -92,12 +100,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/js.c2e0ad94.png"
   },
   {
+    "revision": "932bc9b223728455541bc1f5b67a6467",
+    "url": "/Portfolio/static/media/kronenhofImg.932bc9b2.jpg"
+  },
+  {
+    "revision": "8d2c457efad386b2f3f526b476b6078b",
+    "url": "/Portfolio/static/media/kronenhofLogo.8d2c457e.jpg"
+  },
+  {
     "revision": "cfed49694af0b37fd6876b2bc044dace",
     "url": "/Portfolio/static/media/laptopC.cfed4969.png"
   },
   {
     "revision": "3b9cacc54f649b36b9fafd630370d232",
     "url": "/Portfolio/static/media/laravel.3b9cacc5.png"
+  },
+  {
+    "revision": "866b2567c98c992ef197c81eb5dd5a0a",
+    "url": "/Portfolio/static/media/macaron.866b2567.png"
   },
   {
     "revision": "df67383d536202dbf814576b0393cd39",
@@ -146,5 +166,29 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f27119c20951b473f2de80c000d60fa8",
     "url": "/Portfolio/static/media/symfony.f27119c2.png"
+  },
+  {
+    "revision": "3e5936c5fa32112bb76eb2bf80b71f50",
+    "url": "/Portfolio/static/media/ueberfahrtImg.3e5936c5.jpg"
+  },
+  {
+    "revision": "e70cfd927ee5e4a4e5a37c668d7deab2",
+    "url": "/Portfolio/static/media/ueberfahrtLogo.e70cfd92.jpg"
+  },
+  {
+    "revision": "64bb9ad34397671bdbd08f2fde22e0c4",
+    "url": "/Portfolio/static/media/vilaJoyaImg.64bb9ad3.jpg"
+  },
+  {
+    "revision": "3125e45f7d845b7b21ea9321fad84a18",
+    "url": "/Portfolio/static/media/vilaJoyaLogo.3125e45f.jpg"
+  },
+  {
+    "revision": "f44cdd5c10c188098596673819fc0a7f",
+    "url": "/Portfolio/static/media/vitznauerhofImg.f44cdd5c.jpg"
+  },
+  {
+    "revision": "1f7896ea74353a682ed3cf2e407eed51",
+    "url": "/Portfolio/static/media/vitznauerhofLogo.1f7896ea.jpg"
   }
 ]);
