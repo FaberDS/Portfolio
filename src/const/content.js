@@ -174,7 +174,7 @@ const txt = {
         {
           logo: ueberfahrtLogo,
           Img: ueberfahrtImg,
-          title: "Christian Jürgens | Überfahrt",
+          title: "Christian Jürgens  Überfahrt",
           hotelRating: 5,
           restaurantRating: 3,
           position: "Chef pastry",
@@ -187,7 +187,7 @@ const txt = {
         {
           logo: vitznauerhofLogo,
           Img: vitznauerhofImg,
-          title: "Vitznauerhof | Sens",
+          title: "Vitznauerhof  Sens",
           thematicArea: "boutique hotel",
           hotelRating: 5,
           restaurantRating: 1,
@@ -229,7 +229,7 @@ const txt = {
         {
           logo: edenRocLogo,
           Img: edenRocImg,
-          title: "Eden Roc Ascona | La Brezza",
+          title: "Eden Roc Ascona  La Brezza",
           thematicArea: "5 star grand hotel",
           hotelRating: 5,
           restaurantRating: "16 Gault Millau points",
