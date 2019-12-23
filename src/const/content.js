@@ -43,6 +43,11 @@ const txt = {
     "Technologies",
     "Contact me"
   ],
+
+  headLines: {
+    firstHeadline: "Denis-Portfolio, another portfolio",
+    alteringHeadlines: ["Denis-Portfolio, another portfolio","The portfolio", "My portfolio"]
+  },
   logoTitle: "DD",
   logoTitleLong: "Denis Design",
   logo: faberLogo,

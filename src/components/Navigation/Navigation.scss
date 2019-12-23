@@ -33,7 +33,7 @@ nav {
             display: none;
         }
         &:hover, &:focus{
-            color: $darkContrast !important;
+            color: $triadColor ;
         }
         &:hover .logoTitleLong, &:focus .logoTitleLong{
             display: inline;
@@ -43,6 +43,7 @@ nav {
             display: none;
     
         }
+       
         
     }
    

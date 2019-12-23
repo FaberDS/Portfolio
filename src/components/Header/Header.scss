@@ -3,10 +3,15 @@
     width: 100%;
     color: $baseContrastColor;
     height: 100vh;
-    @include centerItemsDir(column, center,no)
+    @include centerItemsDir(column, center,none);
     h1{
         padding-top: 8vh;
     }
+    h1.sectionTitle div{
+        display: inline;
+        margin: 5px;
+    }
+
     @include md{
         h1{
             padding-top: 15%;

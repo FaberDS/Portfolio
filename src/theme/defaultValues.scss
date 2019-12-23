@@ -7,6 +7,7 @@ $projectSizeMobile: calc(#{$projectSize}*(3/4));
 
 $genMargin: 15px;
 $genMarginHalf : calc(#{$genMargin}/2);
+$genMarginDouble: calc(#{$genMargin}*2);
 $bordRad: 0px;
 
 $scaleFactor: 1.3;
