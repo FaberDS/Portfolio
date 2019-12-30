@@ -1,3 +1,97 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h2 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h3 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h4 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h5 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h6 {
+  font-family: "Cantarell", sans-serif;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+}
+
+.sectionSubTitle {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: calc(30px *(2/3));
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E5AC00;
+}
+
+.detailLabel {
+  font-size: 1em;
+  font-weight: 500;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,30 +102,160 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
-  background-color: #1d809f;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 999;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: background-color 1s ease 0s;
+  transition: background-color 1s ease 0s;
+  padding-left: 10px;
   color: white;
 }
 
-nav ul {
-  list-style: none;
+nav .logoContainer {
+  display: inline-block;
+  width: 30%;
+  position: relative;
 }
 
-nav ul li {
+nav .logoContainer h2 {
+  position: absolute;
+  top: -5px;
+  left: 5px;
   display: inline-block;
-  margin-right: 8px;
+  font-size: 2em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 9999999;
+}
+
+nav .logoContainer .logoTitleLong {
+  display: none;
+}
+
+nav .logoContainer:hover, nav .logoContainer:focus {
+  color: #809f1d;
+}
+
+nav .logoContainer:hover .logoTitleLong, nav .logoContainer:focus .logoTitleLong {
+  display: inline;
+}
+
+nav .logoContainer:hover .logoTitle, nav .logoContainer:focus .logoTitle {
+  display: none;
+}
+
+nav #nav-check {
+  display: none;
+}
+
+nav > .nav-btn {
+  display: none;
+}
+
+nav > .nav-links {
+  padding-top: 20px;
+  display: inline;
+  float: right;
+  margin-right: 15px;
+}
+
+nav > .nav-links > a {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: inherit;
   border-bottom: 1px solid inherit;
 }
 
-nav ul li:hover {
-  color: #ccc;
-  border-bottom: 1px solid #ccc;
+nav > .nav-links > a:hover, nav > .nav-links > a:active {
+  color: #eee;
+  border-bottom: 1px solid #eee;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
-nav .logo {
-  font-size: 30px;
-  color: white;
+@media only screen and (max-width: 780px) {
+  nav .nav-btn {
+    display: none;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: inherit;
+  }
+  nav .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: .6em;
+  }
+  nav .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  nav .nav-btn > label > span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    padding-bottom: .6em;
+    border-top: 0.25em solid #eee;
+  }
+  nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  nav #nav-check:checked ~ .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+    text-align: center;
+    display: none;
+  }
+  nav #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50px;
+    left: 0px;
+    height: 0px;
+    background-color: #2d2200;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .nav-links > a {
+    display: inline;
+    margin: 30px 0;
+  }
+}
+
+nav.solid {
+  background-color: #1d809f;
 }
 /*# sourceMappingURL=Navigation.css.map */

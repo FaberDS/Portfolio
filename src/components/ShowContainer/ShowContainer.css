@@ -92,13 +92,14 @@ h6 {
   font-weight: 500;
 }
 
-.footer {
+.showContainer {
+  position: relative;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,27 +107,62 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 150px;
-  background-color: #2d2200;
+  background-color: white;
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+}
+
+.showContainer > div {
+  max-width: 1200px;
+}
+
+@media only screen and (min-width: 780px) {
+  .showContainer {
+    padding-top: 150px;
+    font-size: 18px;
+  }
+}
+
+.showContainer .sectionTitle {
+  color: #2d2200;
+}
+
+.showContainer .dotCotainer {
+  text-align: center;
+}
+
+.showContainer .prev, .showContainer .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
   color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.footer .copyRight span {
-  margin: 0 10px;
+.showContainer .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.footer .copyRight span:first-child {
-  margin-left: 62px;
+.showContainer .prev:hover, .showContainer .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
-.footer .contactBar {
-  margin-top: 20px;
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*# sourceMappingURL=Footer.css.map */
+/*# sourceMappingURL=ShowContainer.css.map */

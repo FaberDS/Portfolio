@@ -92,41 +92,23 @@ h6 {
   font-weight: 500;
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 150px;
-  background-color: #2d2200;
+.IconCard {
+  display: inline;
+  border-color: white;
   color: white;
+  background-color: black;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 0px;
+  background-color: black;
+  padding: 5px;
+  margin: 10px;
 }
 
-.footer .copyRight span {
-  margin: 0 10px;
+.IconCard:active, .IconCard:hover {
+  border-color: black;
+  color: black;
+  background-color: white;
 }
-
-.footer .copyRight span:first-child {
-  margin-left: 62px;
-}
-
-.footer .contactBar {
-  margin-top: 20px;
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*# sourceMappingURL=Footer.css.map */
+/*# sourceMappingURL=IconCard.css.map */

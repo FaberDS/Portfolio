@@ -1,0 +1,333 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h2 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h3 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h4 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h5 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h6 {
+  font-family: "Cantarell", sans-serif;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+}
+
+.sectionSubTitle {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: calc(30px *(2/3));
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E5AC00;
+}
+
+.detailLabel {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.SlideShowContainer {
+  position: relative;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.SlideShowContainer > div {
+  max-width: 1200px;
+}
+
+@media only screen and (min-width: 780px) {
+  .SlideShowContainer {
+    padding-top: 150px;
+    font-size: 18px;
+  }
+}
+
+.SlideShowContainer h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+@media only screen and (min-width: 780px) {
+  .SlideShowContainer h2 {
+    font-size: 30px;
+  }
+}
+
+.SlideShowContainer .slideShowBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div {
+  background-color: inherit;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: none;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div.active {
+  display: block;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div:hover .slideImage::before {
+  display: block;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div:hover .projectTitleInside,
+.SlideShowContainer .slideShowBox .slideShowSlides > div:focus .projectTitleInside {
+  display: block !important;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage {
+  position: relative;
+  width: inherit;
+  height: calc(500px*(3/5));
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(28, 129, 149, 0.4);
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage:hover ~ .slideInformation .projectTitle {
+  margin-top: calc(15px*3) !important;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage::before:hover {
+  display: block;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage .slideHero {
+  width: inherit;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage .slideHero .projectTitleInside {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  font-size: 2em;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage .slideHero .projectTitleInside a {
+  border-bottom: 2px solid #1d809f;
+  padding: 0 10px;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage .slideHero .btnSlide {
+  top: 45%;
+  padding: calc(15px*1);
+  position: absolute;
+  border: none;
+  background-color: #2d2200;
+  color: white;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage .slideHero .btnSlide:hover, .SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage .slideHero .btnSlide:active, .SlideShowContainer .slideShowBox .slideShowSlides > div .slideImage .slideHero .btnSlide:focus {
+  background-color: rgba(31, 43, 108, 0.9);
+  color: #2d2200;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideLeftArrowContainer {
+  padding-left: 10px !important;
+  left: 0;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideRightArrowContainer {
+  padding-right: 10px !important;
+  right: 0;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideInformation {
+  background-color: inherit;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideInformation .slideShowDots {
+  background-color: inherit;
+  padding-top: calc(15px/2);
+  color: #2d2200;
+  text-align: center;
+  font-size: .8em;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideInformation .slideShowDots li {
+  cursor: pointer;
+  display: inline;
+  font-family: serif !important;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideInformation .slideShowDots li:hover {
+  color: #ccc;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideInformation .projectTitle {
+  background-color: inherit;
+  margin: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideInformation .showDetailsBtn {
+  padding-right: 25px;
+}
+
+.SlideShowContainer .slideShowBox .slideShowSlides > div .slideInformation .showDetailsBtn i {
+  padding-right: 1em;
+}
+
+@media only screen and (max-width: 780px) {
+  .SlideShowContainer .slideShowBox .slideShowSlides > div {
+    width: calc(500px*(3/5));
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .SlideShowContainer .slideShowBox .slideShowSlides > div {
+    width: 500px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .SlideShowContainer .slideShowBox .slideShowSlides > div {
+    width: calc(500px*(4/3));
+  }
+}
+
+.projectBtn {
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 10px;
+  border: 1px solid #1d809f;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+  background-color: #1d809f;
+}
+
+.projectBtn:hover, .projectBtn:active, .projectBtn:focus {
+  color: #1d809f;
+  background-color: white;
+}
+/*# sourceMappingURL=SlideShowContainer.css.map */

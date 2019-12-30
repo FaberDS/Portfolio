@@ -92,7 +92,34 @@ h6 {
   font-weight: 500;
 }
 
-.footer {
+.IconCardBig {
+  width: calc(300px *(3/4));
+  margin: 15px;
+  border: 2px solid #2d2200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.IconCardBig > a {
+  width: 100%;
+}
+
+.IconCardBig .cardIcon {
+  padding: 50px 0;
+  color: white;
+  background-color: #2d2200;
+  font-size: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,31 +129,48 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 150px;
-  background-color: #2d2200;
+}
+
+.IconCardBig .cardIcon i {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.IconCardBig:hover .cardIcon {
+  color: #2d2200;
+  background-color: white;
+}
+
+.IconCardBig:hover .cardContent {
   color: white;
+  background-color: #2d2200;
 }
 
-.footer .copyRight span {
-  margin: 0 10px;
+.IconCardBig .cardContent {
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
 }
 
-.footer .copyRight span:first-child {
-  margin-left: 62px;
+.IconCardBig .cardContent p {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-.footer .contactBar {
-  margin-top: 20px;
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.IconCardBig .cardContent span {
+  text-align: center;
+  font-size: .8em;
 }
-/*# sourceMappingURL=Footer.css.map */
+
+@media only screen and (min-width: 780px) {
+  .IconCardBig {
+    width: 50%;
+    font-size: 1.2em;
+  }
+  .IconCardBig .cardIcon i {
+    width: 200px;
+  }
+}
+/*# sourceMappingURL=IconCardBig.css.map */

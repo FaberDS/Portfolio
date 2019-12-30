@@ -1,0 +1,262 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h2 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h3 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h4 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h5 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h6 {
+  font-family: "Cantarell", sans-serif;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+}
+
+.sectionSubTitle {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: calc(30px *(2/3));
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E5AC00;
+}
+
+.detailLabel {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.knowledge {
+  position: relative;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  /* perspective */
+  /* turning on hover */
+  /* flipping speed here */
+  /* making the the other side hidden while flipping */
+  /* front side is in front of a back side */
+  /* back side */
+}
+
+.knowledge > div {
+  max-width: 1200px;
+}
+
+@media only screen and (min-width: 780px) {
+  .knowledge {
+    padding-top: 150px;
+    font-size: 18px;
+  }
+}
+
+.knowledge .sectionTitle {
+  color: #2d2200;
+}
+
+.knowledge .raw {
+  width: 760px;
+  margin: auto;
+  margin-top: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 780px) {
+  .knowledge .raw {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .knowledge .raw {
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .knowledge .raw {
+    width: 1600px !important;
+  }
+}
+
+.knowledge .flip-container {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  margin: 10px;
+  float: left;
+}
+
+@media only screen and (max-width: 780px) {
+  .knowledge .flip-container {
+    padding-left: 25%;
+  }
+}
+
+.knowledge .flip-container:hover .flipper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.knowledge .flip-container,
+.knowledge .front,
+.knowledge .back {
+  width: 160px;
+  height: 160px;
+  font-size: 10px;
+  border-radius: 0px;
+  position: relative;
+}
+
+.knowledge .flip-container img,
+.knowledge .front img,
+.knowledge .back img {
+  width: 90px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.knowledge .flipper {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+
+.knowledge .front,
+.knowledge .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.knowledge .front {
+  z-index: 2;
+  background-color: white;
+}
+
+.knowledge .back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border: 1px solid white;
+  border-radius: 0px;
+  background-color: rgba(28, 129, 149, 0.4);
+  color: black;
+  text-align: center;
+}
+
+.knowledge .back .flipCardTitle {
+  padding-top: 3px;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.knowledge .back .flipCardTitle + p {
+  font-size: 1.3em;
+}
+/*# sourceMappingURL=Knowledge.css.map */

@@ -92,13 +92,14 @@ h6 {
   font-weight: 500;
 }
 
-.footer {
+.componentContainer {
+  position: relative;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,27 +107,58 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 150px;
-  background-color: #2d2200;
+  background-color: white;
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.componentContainer > div {
+  max-width: 1200px;
+}
+
+@media only screen and (min-width: 780px) {
+  .componentContainer {
+    padding-top: 150px;
+    font-size: 18px;
+  }
+}
+
+.componentContainer .sectionTitle {
   color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2d2200;
 }
 
-.footer .copyRight span {
-  margin: 0 10px;
+@media only screen and (min-width: 780px) {
+  .componentContainer .sectionTitle {
+    font-size: 30px;
+  }
 }
 
-.footer .copyRight span:first-child {
-  margin-left: 62px;
+@media only screen and (max-width: 780px) {
+  .componentContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 1000px;
+    width: 95%;
+  }
 }
 
-.footer .contactBar {
-  margin-top: 20px;
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.componentContainer .subText {
+  width: 50%;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.4em;
 }
-/*# sourceMappingURL=Footer.css.map */
+
+.componentContainer .sectionSubTitle {
+  margin-top: calc(15px*2);
+}
+/*# sourceMappingURL=ComponentContainer.css.map */

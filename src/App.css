@@ -1,3 +1,97 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h2 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h3 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h4 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h5 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h6 {
+  font-family: "Cantarell", sans-serif;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+}
+
+.sectionSubTitle {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: calc(30px *(2/3));
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E5AC00;
+}
+
+.detailLabel {
+  font-size: 1em;
+  font-weight: 500;
+}
+
 [class^='btn'] {
   cursor: pointer;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -10,8 +104,25 @@
   border-color: white;
 }
 
+html, body {
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app .paralex {
+  margin-top: -80px;
+  /* The image used */
+  /* Full height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .app #backTopBtn {
@@ -19,20 +130,27 @@ html {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  color: white;
   z-index: 99;
-  font-size: 2em;
-  outline: none;
-  border-color: rgba(0, 0, 0, 0);
-  background-color: #E5AC00;
-  padding: 10px;
-  border-radius: 4px;
 }
 
-.app #backTopBtn:hover, .app #backTopBtn:active {
-  color: #E5AC00;
-  background-color: #ccc;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  h1 {
+    font-size: 2.2em !important;
+  }
+  h2 {
+    font-size: 1.5em !important;
+  }
+  h3 {
+    font-size: 1.3em !important;
+  }
+  p {
+    font-size: 1em !important;
+  }
 }
 /*# sourceMappingURL=App.css.map */

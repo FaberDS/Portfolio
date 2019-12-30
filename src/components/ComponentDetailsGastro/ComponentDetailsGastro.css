@@ -92,41 +92,17 @@ h6 {
   font-weight: 500;
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 150px;
-  background-color: #2d2200;
-  color: white;
+.hotelRating i {
+  color: gold;
 }
 
-.footer .copyRight span {
-  margin: 0 10px;
+.restaurantRating img {
+  width: 18px;
+  margin-right: 5px;
 }
 
-.footer .copyRight span:first-child {
-  margin-left: 62px;
+.companyImgContainer img {
+  width: 120px !important;
+  height: 120px;
 }
-
-.footer .contactBar {
-  margin-top: 20px;
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*# sourceMappingURL=Footer.css.map */
+/*# sourceMappingURL=ComponentDetailsGastro.css.map */

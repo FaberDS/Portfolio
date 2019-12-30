@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "defaultValues.scss"
+    ],
+    "names": [],
+    "file": "defaultValues.css"
+}

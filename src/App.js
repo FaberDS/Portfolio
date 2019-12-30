@@ -31,13 +31,14 @@ const paralexStyle2 = {
 const paralexStyle3 = {
   backgroundImage: `url(${paraImg3})`,
   minHeight: "10vh",
-  height: "200px !important"
+  height: "200px !important",
 };
 const paralexStyle4 = {
   backgroundImage: `url(${codeImg})`,
   minHeight: "20vh",
   height: "200px !important",
-  backdropFilter: "hue-rotate(120deg)"
+  backdropFilter: "hue-rotate(120deg)",
+  filter: "hue-rotate(90deg)"
 };
 
 class App extends Component {

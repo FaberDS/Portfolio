@@ -22,7 +22,7 @@
       >div {
         background-color: inherit;
         text-align: center;
-        width: $projectSizeMobile;
+        // width: $projectSizeMobile;
         height: fit-content;
         display: none;
 
@@ -91,13 +91,14 @@
               padding: calc(#{$genMargin}*1);
               position: absolute;
               border: none;
-              background-color: rgba(31, 43, 108, .4);
+              background-color: $darkContrast;
+              color:white;
     
               &:hover,
               &:active,
               &:focus {
-                background-color: rgba(31, 43, 108, .6);
-                color: $baseContrastColor;
+                background-color: rgba(31, 43, 108, .9);
+                color: $darkContrast;
     
               }
           }
@@ -157,9 +158,11 @@
           }
 
         }
-
+        @include md{
+          width: $projectSizeMobile;
+        }
         @include lg {
-          width: $projectSize;
+          width: $projectSize !important;
         }
 
         @include xl {

@@ -4,12 +4,17 @@
     width: $CardWidthMobil;
     margin: $genMargin;
     border: 2px solid $darkContrast;
-
+    
     @include centerItemsDir(column,center,none);
+    >a{
+        width: 100%;
+    }
     .cardIcon{
+        padding: 50px 0;
         color: $baseContrastColor;
         background-color: $darkContrast;
         font-size: 3em;
+        @include centerItems;
         i{
             display: table-cell;
             vertical-align: middle; 
@@ -45,7 +50,7 @@
         .cardIcon{
             i{
                 width: $logoImgWidth;
-                height: $logoImgWidth;
+                // height: calc(#{$logoImgWidth}*(1/2));
             }
         }
     }

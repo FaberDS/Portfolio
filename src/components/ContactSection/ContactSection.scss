@@ -8,5 +8,8 @@
     }
     .contactCardsContainer{
         @include centerItemsDir(row, space-evenly,none);
+        @include md{
+            flex-direction: column;
+        }
     }
 }

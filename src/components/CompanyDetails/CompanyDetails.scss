@@ -49,6 +49,8 @@ $marginDetails: 30px;
         @include centerItems;
        
         @include md{
+            margin: 20px 0;
+
             width: $widthImg/2;
             height: $widthImg/2;
             left: 0px;
@@ -133,7 +135,8 @@ $marginDetails: 30px;
             left: 0;
             padding: $genPadding;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
         }
         @include lg{
@@ -176,10 +179,10 @@ $marginDetails: 30px;
                 margin-bottom: 10px;
                 a{
                     width: 50%;
-                    margin-right: $marginDetails;
+                    // margin-right: $marginDetails;
                     display:inline;
                     h3{
-                        font-size: 1.7em;
+                        font-size: 1.3em;
                         padding: 0;
                         margin: 0;
                     }
@@ -202,7 +205,7 @@ $marginDetails: 30px;
             .detailSubtextContainer{
                 display: grid;
                 grid-template-columns: 40% 60%;
-                grid-column-gap: 3em;
+                grid-column-gap: 1em;
                 
             }
             .detailSubtext{

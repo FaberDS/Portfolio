@@ -1,55 +1,183 @@
-.serviceCard {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h2 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h3 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h4 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h5 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h6 {
+  font-family: "Cantarell", sans-serif;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+}
+
+.sectionSubTitle {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: calc(20px *(2/3));
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E5AC00;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionSubTitle {
+    font-size: 30px;
+    font-size: calc(30px *(2/3));
+  }
+}
+
+.detailLabel {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 200px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row .serviceCard {
+  width: calc(200px*(3/5));
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white;
-  padding: 1.5em;
-  border: 1.5px solid rgba(0, 0, 0, 0);
+  padding: 1em;
 }
 
-.serviceCard:hover {
-  border: 1.5px solid #E5AC00;
+.row .serviceCard .cardIcon {
+  margin-bottom: 15px;
 }
 
-.serviceCard span {
-  background-color: white;
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
+.row .serviceCard .cardIcon i {
+  width: 200px;
+  height: 120px;
+  border-radius: 0px;
   color: #1d809f;
+  background-color: white;
   font-size: 3em;
   line-height: 120px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  border: 1px solid white;
 }
 
-.serviceCard span:hover, .serviceCard span:active {
-  color: white;
-  background-color: #1d809f;
-  cursor: pointer;
+.row .serviceCard .cardContent {
+  text-align: center;
+  font-size: 1em;
 }
 
-.serviceCard h4 {
-  font-size: 1.5em;
-  margin-bottom: 8px;
-  font-weight: 500;
+.row .serviceCard .cardContent p {
+  color: #E5AC00;
+  font-weight: 600;
   line-height: 1.2;
 }
 
-.serviceCard p {
-  font-size: 1em;
+.row .serviceCard .cardContent span {
+  text-align: center;
+  font-size: .8em;
+}
+
+@media only screen and (min-width: 780px) {
+  .row .serviceCard {
+    width: 50%;
+    font-size: 1.2em;
+  }
+  .row .serviceCard .cardIcon i {
+    width: 200px;
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=ServiceCard.css.map */

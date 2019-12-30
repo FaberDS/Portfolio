@@ -1,0 +1,342 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h2 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h3 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h4 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h5 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h6 {
+  font-family: "Cantarell", sans-serif;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+}
+
+.sectionSubTitle {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: calc(20px *(2/3));
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E5AC00;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionSubTitle {
+    font-size: 30px;
+    font-size: calc(30px *(2/3));
+  }
+}
+
+.detailLabel {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.companyDetails {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 200px;
+  width: 100%;
+  z-index: 99;
+  position: relative;
+}
+
+.companyDetails > a {
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 780px) {
+  .companyDetails > a {
+    margin: 20px 0;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .companyDetails > a {
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    position: absolute;
+    left: calc(100% - 200px);
+  }
+}
+
+.companyDetails > a img {
+  width: 200px;
+}
+
+@media only screen and (max-width: 780px) {
+  .companyDetails > a img {
+    width: 133.33333px;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .companyDetails {
+    margin-top: calc(15px*(1/2));
+  }
+  .companyDetails {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .companyDetails > a.hover, .companyDetails > a.active {
+    display: none;
+  }
+  .companyDetails:hover a, .companyDetails:active a {
+    left: 0;
+  }
+  .companyDetails:hover .detailsContainer, .companyDetails:active .detailsContainer {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .companyDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.detailsContainer {
+  width: 550px;
+  position: absolute;
+  padding: 20px;
+  top: 15%;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
+}
+
+@media only screen and (max-width: 780px) {
+  .detailsContainer {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .detailsContainer {
+    left: 190px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .detailsContainer {
+    width: 700px;
+    left: 420px;
+  }
+}
+
+.detailsContainer .companyImgContainer {
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 780px) {
+  .detailsContainer .companyImgContainer {
+    margin-right: 15px;
+  }
+}
+
+.detailsContainer .companyImgContainer a img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 780px) {
+  .detailsContainer .companyImgContainer a img {
+    width: 60px;
+  }
+}
+
+.detailsContainer .detailsTextContainer {
+  color: #555;
+}
+
+@media only screen and (max-width: 780px) {
+  .detailsContainer .detailsTextContainer {
+    font-size: .7em;
+  }
+}
+
+.detailsContainer .detailsTextContainer .detailsTextHeadline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detailsContainer .detailsTextContainer .detailsTextHeadline a {
+  width: 50%;
+  display: inline;
+}
+
+.detailsContainer .detailsTextContainer .detailsTextHeadline a h3 {
+  font-size: 1.3em;
+  padding: 0;
+  margin: 0;
+}
+
+.detailsContainer .detailsTextContainer .detailsTextHeadline .timePeriode {
+  color: #555;
+  float: right;
+  padding-top: 10px;
+  display: block;
+  font-size: .8em;
+}
+
+.detailsContainer .detailsTextContainer .detailsTextHeadline .timePeriode i {
+  margin-right: 15px;
+}
+
+.detailsContainer .detailsTextContainer p {
+  line-height: 1.5em;
+}
+
+.detailsContainer .detailsTextContainer .detailSubtextContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  grid-column-gap: 1em;
+}
+
+.detailsContainer .detailsTextContainer .detailSubtext {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 780px) {
+  .detailsContainer.hide {
+    -webkit-transition: all 0.01s ease-out;
+    transition: all 0.01s ease-out;
+  }
+}
+
+.text-seperator {
+  margin: 0 10px;
+}
+
+.detailSubject {
+  margin-right: 12px;
+  font-weight: 500;
+  font-size: 1em;
+}
+/*# sourceMappingURL=CompanyDetails.css.map */

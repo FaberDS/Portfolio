@@ -53,13 +53,13 @@ $headings : h1 h2 h3 h4 h5 h6;
     padding-top: $padCenterPageMobil;
     padding-bottom: $padCenterPageMobil;
     >div{max-width: 1200px;}
-    @include md{
+    // @include md{
         
-    }
-    @include lg{
-        padding-top: $padCenterPage;
-        font-size: $genFontSize;
-    }
+    // }
+    // @include lg{
+    //     padding-top: $padCenterPage;
+    //     font-size: $genFontSize;
+    // }
 
 }
 @mixin sectionTitle(){
@@ -79,10 +79,15 @@ $headings : h1 h2 h3 h4 h5 h6;
     margin-bottom: $genMargin;
     padding: $genPadding;
 
-    font-size: calc(#{$genSectionTitleSize} *(2/3));
+    font-size: calc(#{$genSectionTitleSizeMobile} *(2/3));
     font-weight: 700;
     text-transform: uppercase;
     color: $secondBaseColor;
+    @include lg{
+        font-size:$genSectionTitleSize;
+        font-size: calc(#{$genSectionTitleSize} *(2/3));
+
+    }
 }
 .sectionSubTitle{
     @include sectionSubTitle;

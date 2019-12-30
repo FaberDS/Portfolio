@@ -1,1 +1,245 @@
-/* No CSS *//*# sourceMappingURL=ThatsMe.css.map */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h2 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h3 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h4 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h5 {
+  font-family: "Cantarell", sans-serif;
+}
+
+h6 {
+  font-family: "Cantarell", sans-serif;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+}
+
+.sectionSubTitle {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: calc(30px *(2/3));
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E5AC00;
+}
+
+.detailLabel {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.thatsMe {
+  position: relative;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thatsMe > div {
+  max-width: 1200px;
+}
+
+@media only screen and (min-width: 780px) {
+  .thatsMe {
+    padding-top: 150px;
+    font-size: 18px;
+  }
+}
+
+.thatsMe h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+@media only screen and (min-width: 780px) {
+  .thatsMe h2 {
+    font-size: 30px;
+  }
+}
+
+.thatsMe .row {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.thatsMe .row .column {
+  padding: 0;
+}
+
+.thatsMe .row .column > div {
+  margin: 10px;
+}
+
+.thatsMe .row .Column-1-3 {
+  font-size: .8em;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.thatsMe .row .Column-1-3 #logo {
+  width: calc(200px*(3/5));
+  margin-bottom: 15px;
+}
+
+.thatsMe .row .Column-1-3 #logo img {
+  width: inherit;
+}
+
+.thatsMe .row .Column-1-3 #vision {
+  width: 200px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 780px) {
+  .thatsMe .row .Column-1-3 {
+    width: 25%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.3em;
+  }
+  .thatsMe .row .Column-1-3 #logo {
+    width: 200px;
+  }
+}
+
+.thatsMe .row .Column-2-3 {
+  width: 90%;
+}
+
+.thatsMe .row .Column-2-3 .content > p {
+  margin: 30px 0;
+  line-height: 1.5;
+  color: #555;
+}
+
+.thatsMe .row .Column-2-3 .content .intro p::first-letter {
+  color: #E5AC00;
+  font-weight: bold;
+  margin-right: .15em;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 780px) {
+  .thatsMe .row .Column-2-3 {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=ThatsMe.css.map */
