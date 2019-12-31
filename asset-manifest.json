@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.875b06ac.chunk.css",
-    "main.js": "/Portfolio/static/js/main.24337238.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.24337238.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.5487c08a.chunk.css",
+    "main.js": "/Portfolio/static/js/main.77bd5c9c.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.77bd5c9c.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c7335eb8.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c7335eb8.js.map",
-    "static/js/2.8bef5d57.chunk.js": "/Portfolio/static/js/2.8bef5d57.chunk.js",
-    "static/js/2.8bef5d57.chunk.js.map": "/Portfolio/static/js/2.8bef5d57.chunk.js.map",
+    "static/js/2.7a07bb39.chunk.js": "/Portfolio/static/js/2.7a07bb39.chunk.js",
+    "static/js/2.7a07bb39.chunk.js.map": "/Portfolio/static/js/2.7a07bb39.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.57e9c48146aa1eb52f145397837a0097.js": "/Portfolio/precache-manifest.57e9c48146aa1eb52f145397837a0097.js",
+    "precache-manifest.a0eee07225d5ee3c4a1bd50588a9b231.js": "/Portfolio/precache-manifest.a0eee07225d5ee3c4a1bd50588a9b231.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.875b06ac.chunk.css.map": "/Portfolio/static/css/main.875b06ac.chunk.css.map",
-    "static/js/2.8bef5d57.chunk.js.LICENSE": "/Portfolio/static/js/2.8bef5d57.chunk.js.LICENSE",
+    "static/css/main.5487c08a.chunk.css.map": "/Portfolio/static/css/main.5487c08a.chunk.css.map",
+    "static/js/2.7a07bb39.chunk.js.LICENSE": "/Portfolio/static/js/2.7a07bb39.chunk.js.LICENSE",
     "static/media/SharePoint.png": "/Portfolio/static/media/SharePoint.7f7b8384.png",
     "static/media/bootstrap.png": "/Portfolio/static/media/bootstrap.ba3a9036.png",
     "static/media/campus02.png": "/Portfolio/static/media/campus02.976f4e6a.png",
@@ -33,7 +33,8 @@
     "static/media/js.png": "/Portfolio/static/media/js.c2e0ad94.png",
     "static/media/kronenhofImg.jpg": "/Portfolio/static/media/kronenhofImg.932bc9b2.jpg",
     "static/media/kronenhofLogo.jpg": "/Portfolio/static/media/kronenhofLogo.8d2c457e.jpg",
-    "static/media/laptopC.png": "/Portfolio/static/media/laptopC.cfed4969.png",
+    "static/media/laptop.jpeg": "/Portfolio/static/media/laptop.8d0ba7fc.jpeg",
+    "static/media/laptopMobil.jpeg": "/Portfolio/static/media/laptopMobil.421cd377.jpeg",
     "static/media/laravel.png": "/Portfolio/static/media/laravel.3b9cacc5.png",
     "static/media/macaron.png": "/Portfolio/static/media/macaron.866b2567.png",
     "static/media/nintex.png": "/Portfolio/static/media/nintex.df67383d.png",
@@ -50,15 +51,15 @@
     "static/media/symfony.png": "/Portfolio/static/media/symfony.f27119c2.png",
     "static/media/ueberfahrtImg.jpg": "/Portfolio/static/media/ueberfahrtImg.3e5936c5.jpg",
     "static/media/ueberfahrtLogo.jpg": "/Portfolio/static/media/ueberfahrtLogo.e70cfd92.jpg",
-    "static/media/vilaJoyaImg.jpg": "/Portfolio/static/media/vilaJoyaImg.64bb9ad3.jpg",
+    "static/media/vilaJoyaImg2.jpg": "/Portfolio/static/media/vilaJoyaImg2.2ef6cc2f.jpg",
     "static/media/vilaJoyaLogo.jpg": "/Portfolio/static/media/vilaJoyaLogo.3125e45f.jpg",
     "static/media/vitznauerhofImg.jpg": "/Portfolio/static/media/vitznauerhofImg.f44cdd5c.jpg",
-    "static/media/vitznauerhofLogo.jpg": "/Portfolio/static/media/vitznauerhofLogo.1f7896ea.jpg"
+    "static/media/vitznauerhofLogo.jpg": "/Portfolio/static/media/vitznauerhofLogo.d5253302.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c7335eb8.js",
-    "static/js/2.8bef5d57.chunk.js",
-    "static/css/main.875b06ac.chunk.css",
-    "static/js/main.24337238.chunk.js"
+    "static/js/2.7a07bb39.chunk.js",
+    "static/css/main.5487c08a.chunk.css",
+    "static/js/main.77bd5c9c.chunk.js"
   ]
 }

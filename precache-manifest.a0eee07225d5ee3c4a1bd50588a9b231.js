@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7462ee1dab49261b1b7d8877fe305b3f",
+    "revision": "9c1840d700666cb36e1e353aa5907e9d",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "2d64ffca748acf18d863",
-    "url": "/Portfolio/static/css/main.875b06ac.chunk.css"
+    "revision": "4049a0f064602ae5649e",
+    "url": "/Portfolio/static/css/main.5487c08a.chunk.css"
   },
   {
-    "revision": "a4d704e81384a7202ae4",
-    "url": "/Portfolio/static/js/2.8bef5d57.chunk.js"
+    "revision": "f07b3ebd5eecaec239b8",
+    "url": "/Portfolio/static/js/2.7a07bb39.chunk.js"
   },
   {
     "revision": "e1cc8c46a72ae73ac18f88913bf71afe",
-    "url": "/Portfolio/static/js/2.8bef5d57.chunk.js.LICENSE"
+    "url": "/Portfolio/static/js/2.7a07bb39.chunk.js.LICENSE"
   },
   {
-    "revision": "2d64ffca748acf18d863",
-    "url": "/Portfolio/static/js/main.24337238.chunk.js"
+    "revision": "4049a0f064602ae5649e",
+    "url": "/Portfolio/static/js/main.77bd5c9c.chunk.js"
   },
   {
     "revision": "93d806d1a046e00ac01d",
@@ -108,8 +108,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/kronenhofLogo.8d2c457e.jpg"
   },
   {
-    "revision": "cfed49694af0b37fd6876b2bc044dace",
-    "url": "/Portfolio/static/media/laptopC.cfed4969.png"
+    "revision": "8d0ba7fca5b1956bd88938db606b2ef6",
+    "url": "/Portfolio/static/media/laptop.8d0ba7fc.jpeg"
+  },
+  {
+    "revision": "421cd37797bf294f7e1e1c56ba915c44",
+    "url": "/Portfolio/static/media/laptopMobil.421cd377.jpeg"
   },
   {
     "revision": "3b9cacc54f649b36b9fafd630370d232",
@@ -176,8 +180,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/ueberfahrtLogo.e70cfd92.jpg"
   },
   {
-    "revision": "64bb9ad34397671bdbd08f2fde22e0c4",
-    "url": "/Portfolio/static/media/vilaJoyaImg.64bb9ad3.jpg"
+    "revision": "2ef6cc2f56b2e8b603b16588408179ba",
+    "url": "/Portfolio/static/media/vilaJoyaImg2.2ef6cc2f.jpg"
   },
   {
     "revision": "3125e45f7d845b7b21ea9321fad84a18",
@@ -188,7 +192,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/vitznauerhofImg.f44cdd5c.jpg"
   },
   {
-    "revision": "1f7896ea74353a682ed3cf2e407eed51",
-    "url": "/Portfolio/static/media/vitznauerhofLogo.1f7896ea.jpg"
+    "revision": "d5253302f1921861c28928fe954e2ac6",
+    "url": "/Portfolio/static/media/vitznauerhofLogo.d5253302.jpg"
   }
 ]);
