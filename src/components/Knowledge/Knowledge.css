@@ -81,10 +81,18 @@ h6 {
   margin: 0;
   margin-bottom: 15px;
   padding: 10px;
-  font-size: calc(30px *(2/3));
+  font-size: calc(20px *(2/3));
   font-weight: 700;
   text-transform: uppercase;
   color: #E5AC00;
+  text-align: center;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionSubTitle {
+    font-size: 30px;
+    font-size: calc(30px *(2/3));
+  }
 }
 
 .detailLabel {
@@ -123,13 +131,6 @@ h6 {
   max-width: 1200px;
 }
 
-@media only screen and (min-width: 780px) {
-  .knowledge {
-    padding-top: 150px;
-    font-size: 18px;
-  }
-}
-
 .knowledge .sectionTitle {
   color: #2d2200;
 }
@@ -148,6 +149,7 @@ h6 {
   .knowledge .raw {
     margin: 0;
     width: 100%;
+    padding-left: 33%;
   }
 }
 
@@ -170,12 +172,6 @@ h6 {
   float: left;
 }
 
-@media only screen and (max-width: 780px) {
-  .knowledge .flip-container {
-    padding-left: 25%;
-  }
-}
-
 .knowledge .flip-container:hover .flipper {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -184,8 +180,8 @@ h6 {
 .knowledge .flip-container,
 .knowledge .front,
 .knowledge .back {
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   font-size: 10px;
   border-radius: 0px;
   position: relative;
@@ -201,6 +197,15 @@ h6 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 780px) {
+  .knowledge .flip-container,
+  .knowledge .front,
+  .knowledge .back {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 .knowledge .flipper {

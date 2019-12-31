@@ -14,7 +14,7 @@ nav {
     color: $baseContrastColor;
     .logoContainer{
         display: inline-block;
-        width: 30%;
+        width: 80%;
         position: relative;
         h2{
             position: absolute;
@@ -25,6 +25,9 @@ nav {
             transition: all $scaleTime;
             z-index: 9999999;
            
+        }
+        @include lg{
+            width: 30%;
         }
         // .logoTitle{
         //     display: none;

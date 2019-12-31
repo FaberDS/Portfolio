@@ -8,7 +8,8 @@ import Knowledge from "./components/Knowledge/Knowledge";
 import txt,{icons} from "./const/content";
 import base from "./basicFunctionality/Actions";
 import ThatsMe from "./components/ThatsMe/ThatsMe";
-import paraImg from "./images/laptopC.png";
+import paraImg from "./images/laptop.jpeg";
+import paraImgMobil from "./images/laptopMobil.jpeg";
 import codeImg from "./images/code.jpeg";
 import paraImg3 from "./images/phone.jpeg";
 import ComponentContainer from "./components/ComponentContainer/ComponentContainer";
@@ -18,6 +19,9 @@ import IconCard from "./components/IconCard/IconCard";
 import { isCompositeComponent } from "react-dom/test-utils";
 import ContactSection from "./components/ContactSection/ContactSection";
 const sections = txt.navigationSections;
+const width= window.screen.width;
+let headerImg = width <= 600 ? paraImgMobil : paraImg;
+
 const paralexStyle = {
   backgroundImage: `url(${paraImg})`,
   minHeight: "100vh",
@@ -43,8 +47,7 @@ const paralexStyle4 = {
 
 class App extends Component {
   render() {
-    console.log(txt);
-    return (
+        return (
       <div className="app">
         <Navigation {...txt} sections={sections} />
         <div className="paralex" style={paralexStyle}>

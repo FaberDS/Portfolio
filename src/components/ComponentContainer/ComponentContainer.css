@@ -81,10 +81,17 @@ h6 {
   margin: 0;
   margin-bottom: 15px;
   padding: 10px;
-  font-size: calc(30px *(2/3));
+  font-size: calc(20px *(2/3));
   font-weight: 700;
   text-transform: uppercase;
   color: #E5AC00;
+}
+
+@media only screen and (min-width: 780px) {
+  .sectionSubTitle {
+    font-size: 30px;
+    font-size: calc(30px *(2/3));
+  }
 }
 
 .detailLabel {
@@ -120,13 +127,6 @@ h6 {
   max-width: 1200px;
 }
 
-@media only screen and (min-width: 780px) {
-  .componentContainer {
-    padding-top: 150px;
-    font-size: 18px;
-  }
-}
-
 .componentContainer .sectionTitle {
   color: white;
   font-size: 20px;
@@ -152,10 +152,16 @@ h6 {
 }
 
 .componentContainer .subText {
-  width: 50%;
+  width: 90%;
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.4em;
+}
+
+@media only screen and (min-width: 780px) {
+  .componentContainer .subText {
+    width: 50%;
+  }
 }
 
 .componentContainer .sectionSubTitle {

@@ -14,10 +14,14 @@
         width: 95%;
     }
     .subText{
-        width: 50%;
+        width: 90%;
         text-align: justify;
         text-justify: inter-word;
         line-height: 1.4em;
+        @include lg{
+            width: 50%;
+
+        }
     }
     .sectionSubTitle{
         margin-top: $genMarginDouble;

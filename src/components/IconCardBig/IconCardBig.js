@@ -2,7 +2,6 @@ import React from 'react';
 import './IconCardBig.scss';
 function IconCardBig(props) {
     const {title, icon, link} = props;
-    console.log(`IconCardBig props: %o`,props)
     return (
         <div className="IconCardBig">
             <a href={link}>

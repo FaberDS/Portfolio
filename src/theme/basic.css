@@ -85,6 +85,7 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: #E5AC00;
+  text-align: center;
 }
 
 @media only screen and (min-width: 780px) {

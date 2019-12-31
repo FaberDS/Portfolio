@@ -9,7 +9,7 @@ import edenRocImg from '../images/firmenLogos/edenRocImg.jpg';
 import ueberfahrtLogo from '../images/firmenLogos/ueberfahrtLogo.jpg';
 import ueberfahrtImg from '../images/firmenLogos/ueberfahrtImg.jpg';
 import vilaJoyaLogo from '../images/firmenLogos/vilaJoyaLogo.jpg';
-import vilaJoyaImg from '../images/firmenLogos/vilaJoyaImg.jpg';
+import vilaJoyaImg from '../images/firmenLogos/vilaJoyaImg2.jpg';
 import vitznauerhofLogo from '../images/firmenLogos/vitznauerhofLogo.jpg';
 import vitznauerhofImg from '../images/firmenLogos/vitznauerhofImg.jpg';
 import kronenhofLogo from '../images/firmenLogos/kronenhofLogo.jpg';
