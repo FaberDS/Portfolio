@@ -28,7 +28,7 @@ class Knowledge extends Component {
                                     <img src={png.src} alt={png.title + ' Image'}/>
                                 </div>
                                 <div className="back">
-                                    <p className="flipCardTitle">{png.title}</p>
+                                    <h4 className="flipCardTitle">{png.title}</h4>
                                     <p>{png.details}</p>
                                 </div>
                                 </div>

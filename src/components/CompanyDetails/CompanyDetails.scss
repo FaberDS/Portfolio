@@ -29,7 +29,7 @@ $marginDetails: 30px;
     transition: all $transistionDurationTextDisapear ease-out;
 }
 .companyDetails{
-    height: fit-content;
+    // height: fit-content;
     min-height: 200px;
     width: 100%;
     z-index: 99;
@@ -49,7 +49,7 @@ $marginDetails: 30px;
         @include centerItems;
        
         @include md{
-            margin: 20px 0;
+            margin: 5px 0;
 
             width: $widthImg/2;
             height: $widthImg/2;

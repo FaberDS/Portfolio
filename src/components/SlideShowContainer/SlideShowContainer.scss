@@ -4,7 +4,6 @@
   @include centeredFullPage($baseContrastColor);
 
   h2 {
-    @include sectionTitle;
     color: #333;
   }
 
@@ -13,21 +12,11 @@
     @include centerItemsDir(column, center);
 
     .slideShowSlides {
-
-      // background-color: $baseColorTran1;
-      // text-align: center;
-      // width: $projectSizeMobile;
-      // margin-bottom:$genMargin;
-      // @include centerItemsDir(column, center, none);
       >div {
         background-color: inherit;
         text-align: center;
-        // width: $projectSizeMobile;
         height: fit-content;
         display: none;
-
-      
-
         &.active {
           display: block;
         }
@@ -149,7 +138,6 @@
           }
 
           .showDetailsBtn {
-            // background-color: inherit;
             padding-right: 25px;
 
             i {
