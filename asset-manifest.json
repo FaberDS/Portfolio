@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3d0bb279.chunk.css",
-    "main.js": "/Portfolio/static/js/main.406a662c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.406a662c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.90f93b8c.chunk.css",
+    "main.js": "/Portfolio/static/js/main.c33fd871.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c33fd871.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c7335eb8.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c7335eb8.js.map",
-    "static/js/2.dc2df2b7.chunk.js": "/Portfolio/static/js/2.dc2df2b7.chunk.js",
-    "static/js/2.dc2df2b7.chunk.js.map": "/Portfolio/static/js/2.dc2df2b7.chunk.js.map",
+    "static/js/2.e7f07ede.chunk.js": "/Portfolio/static/js/2.e7f07ede.chunk.js",
+    "static/js/2.e7f07ede.chunk.js.map": "/Portfolio/static/js/2.e7f07ede.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.d9df7b849e3b16b1542993f9e427887c.js": "/Portfolio/precache-manifest.d9df7b849e3b16b1542993f9e427887c.js",
+    "precache-manifest.2de0f8db71f39cbacff1a65ea0386c90.js": "/Portfolio/precache-manifest.2de0f8db71f39cbacff1a65ea0386c90.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.3d0bb279.chunk.css.map": "/Portfolio/static/css/main.3d0bb279.chunk.css.map",
-    "static/js/2.dc2df2b7.chunk.js.LICENSE": "/Portfolio/static/js/2.dc2df2b7.chunk.js.LICENSE",
+    "static/css/main.90f93b8c.chunk.css.map": "/Portfolio/static/css/main.90f93b8c.chunk.css.map",
+    "static/js/2.e7f07ede.chunk.js.LICENSE": "/Portfolio/static/js/2.e7f07ede.chunk.js.LICENSE",
     "static/media/SharePoint.png": "/Portfolio/static/media/SharePoint.7f7b8384.png",
     "static/media/bootstrap.png": "/Portfolio/static/media/bootstrap.ba3a9036.png",
     "static/media/campus02.png": "/Portfolio/static/media/campus02.976f4e6a.png",
@@ -34,7 +34,7 @@
     "static/media/kronenhofImg.jpg": "/Portfolio/static/media/kronenhofImg.932bc9b2.jpg",
     "static/media/kronenhofLogo.jpg": "/Portfolio/static/media/kronenhofLogo.8d2c457e.jpg",
     "static/media/laptop.jpeg": "/Portfolio/static/media/laptop.8d0ba7fc.jpeg",
-    "static/media/laptopMobil.jpeg": "/Portfolio/static/media/laptopMobil.421cd377.jpeg",
+    "static/media/laptopMobil.jpg": "/Portfolio/static/media/laptopMobil.811156d8.jpg",
     "static/media/laravel.png": "/Portfolio/static/media/laravel.3b9cacc5.png",
     "static/media/macaron.png": "/Portfolio/static/media/macaron.866b2567.png",
     "static/media/nintex.png": "/Portfolio/static/media/nintex.df67383d.png",
@@ -58,8 +58,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c7335eb8.js",
-    "static/js/2.dc2df2b7.chunk.js",
-    "static/css/main.3d0bb279.chunk.css",
-    "static/js/main.406a662c.chunk.js"
+    "static/js/2.e7f07ede.chunk.js",
+    "static/css/main.90f93b8c.chunk.css",
+    "static/js/main.c33fd871.chunk.js"
   ]
 }
