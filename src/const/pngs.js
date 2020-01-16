@@ -28,11 +28,11 @@ const pngs =[{
             },{
                 src: css,
                 title: 'CSS',
-                details: 'Is the language for describing the presentation of Web pages, including colors, layout, and fonts.'
+                details: 'Is the language for describing the presentation of web pages, including colors, layout, and fonts.'
             },{
                 src: js,
                 title: 'JS',
-                details: 'Is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages.'
+                details: 'Is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for web pages.'
             },{
                 src: jquery,
                 title: 'jquery',
@@ -44,7 +44,7 @@ const pngs =[{
             },{
                 src: sass,
                 title: 'Sass',
-                details: 'Is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).'
+                details: 'Is a preprocessor scripting language that is interpreted or compiled into CSS.'
             },{
                 src: react,
                 title: 'React',
@@ -56,7 +56,7 @@ const pngs =[{
             },{
                 src: bootstrap,
                 title: 'bootstrap',
-                details: 'Is a powerful and popular mobile first front-end framework for building responsive mobile first sites on the web. It is a latest version of Bootstrap.'
+                details: 'Is a powerful and popular mobile first front-end framework for building responsive mobile first sites on the web.'
             },
             
             {
@@ -74,11 +74,11 @@ const pngs =[{
             },{
                 src: spring,
                 title: 'spring',
-                details: 'The Spring Framework is an application framework and inversion of control container for the Java platform.'
+                details: 'The spring framework is an application framework and inversion of control container for the Java platform.'
             },{
                 src: sharepoint,
                 title: 'SharePoint',
-                details: 'Is a web-based collaborative platform that integrates with Microsoft Office.'
+                details: 'Is a web-based collaborative platform that integrates in Microsoft Office environment.'
             },{
                 src: spfx,
                 title: 'SPFx',
@@ -92,7 +92,7 @@ const pngs =[{
             ,{
                 src: azure,
                 title: 'Azure',
-                details: 'Micrsosoft, hosting plattform.'
+                details: 'Microsoft, hosting platform.'
             },{
                 src: flow,
                 title: 'Flow',

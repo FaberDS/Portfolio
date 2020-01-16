@@ -70,7 +70,7 @@ const txt = {
     intro:
       "Computer science is more than a job for me. Computer science offers the possibility to change the world from an office. Computer science gives us the opportunity to help millions of people",
     main:
-      "With computer science I want to make my contribution to the overall welfare of mankind. To achieve this I will have to overcome many hurdles, but I know that with a solid education and growing professional experience nothing stands in the way of this goal. With every working day, with every experience I get a little bit closer to this goal.",
+      "With computer science I want to make my contribution to the overall welfare of mankind. To achieve this I will have to overcome many hurdles, but I know with a solid education and growing professional experience nothing stands in the way of this goal. With every working day, with every experience I get a little bit closer to this goal.",
     poente:
       "My enthusiasm for new technologies and digital change is exceeded only by my ambition."
   },
@@ -88,7 +88,7 @@ const txt = {
             filterObject("CSS"),
             filterObject("JS")
           ],
-          purpose: "BSD-2 'Human Interaction' pratical exercise",
+          purpose: "BSD-2 'Human Interaction' practical exercise",
           createdIn: "04/2019",
           link: "https://faberds.github.io/schueleskocherei/"
         },
@@ -117,7 +117,7 @@ const txt = {
   },
   history: {
     sectionTitle: "Career path",
-    sectionSubTitle: "IT career",
+    sectionSubTitle: "CS career",
     historyDetails: {
       position: "Position",
       title: "Title",
@@ -144,7 +144,7 @@ const txt = {
         Img: campus02Img,
         title: "FH Campus02",
         isWrk: false,
-        thematicArea: "Business and informatic",
+        thematicArea: "Business and computer science",
         position: "Business Software Development - Bachelor",
         subtext: "For me the optimal connection between work and education.",
         fromDate: "01.09.2018",
@@ -156,7 +156,7 @@ const txt = {
         Img: codefactoryImg,
         title: "codefactory",
         isWork: false,
-        thematicArea: "Informatic, Developement",
+        thematicArea: "Computer science, development",
         position: "Fullstack Developer Basics",
         subtext:
           "Mediation of the most important basics in modern web design. Combined with many group projects.",
@@ -166,9 +166,9 @@ const txt = {
       }
     ],
     gastro: {
-      sectionSubTitle: "Before IT",
+      sectionSubTitle: "Before cs",
       story:
-        "For ten years I was responsible for the desserts in the best houses in Europe. I wanted to create things, dishes, desserts, feelings that would survive the moment of pleasure, something that would not pass.  This desire fuelled my thirst for knowledge. This was my entry into IT.",
+        "For ten years I was responsible for the desserts in the best houses in Europe. I wanted to create things, dishes, desserts, feelings that would survive the moment of pleasure, something that would not pass.  This desire fuelled my thirst for knowledge. This was my entry into computer science.",
     
         companies: [
         {
@@ -221,7 +221,7 @@ const txt = {
           restaurantRating: 1,
           position: "Chef pastry",
           subtext:
-            "For 200 full-board guests and 60 people in the gourmet restaurant my team of 4 people and I were responsible for all sweet treats",
+            "For 200 full-board guests and 60 people in the gourmet restaurant my team of 4 people and I were responsible for all sweet treats.",
           fromDate: "2013",
           toDate: "2014",
           linkTo: "https://www.kronenhof.com/en/"
@@ -278,12 +278,12 @@ const txt = {
     sectionSubTitle: "Fields I would like to work in",
     services: [
       {
-        serviceTitle: "Webdevelopment",
+        serviceTitle: "Web development",
         icon: "fa fa-mobile",
-        serviceSubtitle: "With all comon technologie."
+        serviceSubtitle: "With all comon technology"
       },
       {
-        serviceTitle: "Webdesign",
+        serviceTitle: "Web design",
         icon: "fa fa-paint-brush",
         serviceSubtitle:
           "From simple single-pages up to complex web applications"
